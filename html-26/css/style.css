@@ -1,0 +1,44 @@
+div {
+    color: red;
+}
+
+.pervi {
+    color: blue;
+}
+
+#rabota {
+    color: aqua;
+}
+
+[data-exemple] {
+    color: blueviolet;
+}
+
+[data-exemple="first"] {
+    color: brown;
+}
+
+.black2,
+.black3 {
+    color: chartreuse;
+}
+
+div.pauk {
+    color: yellow;
+}
+
+span.pauk {
+    color: rgb(132, 24, 182);
+}
+
+div .gorlo {
+    color: darkgreen;
+}
+
+.parent>.child {
+    color: cornflowerblue;
+}
+
+div .child {
+    color: rgb(5, 255, 17);
+}
