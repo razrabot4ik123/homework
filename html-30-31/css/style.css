@@ -1,0 +1,36 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: wheat;
+}
+
+/* sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad */
+
+
+.block {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.block-1 {
+    margin: 20px 40px 20px;
+}
+
+.block-2 {
+    margin: -10px;
+}
+
+.inline {
+    margin: 20px;
+}
+
+.img {
+    padding: 30px;
+}

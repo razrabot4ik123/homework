@@ -1,0 +1,29 @@
+body {
+    font-size: 40px;
+}
+
+.block, .inline {
+    background: wheat;
+}
+
+/* sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad */
+
+.block {
+    /* border: 10px groove red;
+    border-top: 10px double blue;
+    border-bottom-color: #00ff22; */
+    /* border: 1px solid black; */
+    /* border-radius: 30px 60px 50% 20%; */
+    /* border-top-left-radius: 50%; */
+    outline: 10px solid black;
+    text-align: center;
+}
+
+.inline {
+
+}
+
+.img {
+    border-radius: 30px;
+    border: 10px groove red;
+}

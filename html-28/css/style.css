@@ -1,0 +1,53 @@
+/* .some-text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: justify;
+    font-weight: 700;
+    font-style: italic;
+} */
+
+.pervoe {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.vtoroe {
+    text-decoration: line-through;
+}
+
+.tretie {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.chetire {
+    word-spacing: 30px;
+    text-shadow: 1px 1px 1px purple;
+    text-decoration: overline wavy;
+}
+
+.pitaoe {
+    font-family: serif;
+    text-decoration: underline double;
+    letter-spacing: 5px;
+}
+
+.sam {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: justify;
+    text-decoration: 3px overline line-through underline wavy red;
+    line-height: 90px;
+    text-shadow: 2px 2px 4px rgb(235, 115, 115);
+    color: brown;
+    text-transform: capitalize;
+    text-indent: 40px;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+    font-style: normal;
+}
