@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background: rgb(217, 205, 236);
+    overflow: auto;
+    border: solid 1px black;
+    border-radius: 30px 0 0 30px;
+    height: 550px;
+}
+
+.papka {
+    background: rgb(216, 173, 110);
+    box-shadow: inset 0 0 10px;
+    width: 260px;
+    height: 200px;
+    padding: 15px 30px;
+    margin: 10px 5px 10px 5px;
+    border-radius: 30px;
+    display: inline-block
+}
+
+.soder {
+    width: 1300px;
+}

@@ -1,0 +1,46 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: wheat;
+}
+
+.block {
+    padding: 30px;
+    margin: 50px;
+}
+
+/* sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad */
+
+.block {
+    /* opacity: 0.5; */
+
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+.inline {
+    opacity: .7;
+}
+
+.img {
+    visibility: hidden;
+}
+
+.img2 {
+    opacity: .1;
+}
+
+.rako {
+    width: 400px;
+    background: wheat;
+    height: 200px;
+    overflow: auto;
+}
