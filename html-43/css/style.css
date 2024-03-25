@@ -1,0 +1,293 @@
+body {
+    background: #181E34;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+}
+
+.container {
+    max-width: 930px;
+    margin: auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* Делал неопрятно, простите */
+
+.header-logo-size {
+    width: 48px;
+    height: 48px;
+}
+
+.header-logo-link {
+    width: 48px;
+    height: 48px;
+}
+
+.header-menu-place {
+    width: 895px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-and-button {
+    width: 437px;
+    height: 48px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header {
+    height: 114px;
+    padding-top: 30px;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu-text {
+    margin: 0 15px 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-menu-text:first-child {
+    margin: 0 15px 0 0;
+}
+
+.header-menu-text:last-child {
+    margin: 0 34px 0 15px;
+}
+
+.header-button-link {
+    border-radius: 100px;
+    padding: 14px 30px;
+    width: 113px;
+    height: 48px;
+    background: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2766ae;
+    text-align: center;
+}
+
+.section-first {
+    height: 508px;
+    background: url("../imgmain/section/first/main.jpg") 10% 50% / cover no-repeat;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.main-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 120px 0 60px;
+}
+
+.main-in-text {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #01a2cb;
+}
+
+.main-text-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-button-section-1-1-style:first-child {
+    margin-bottom: 5px;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 320px;
+    height: 56px;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-button-section-1-2-style {
+    margin-top: 5px;
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 320px;
+    height: 56px;
+    background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-button-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-texts {
+    max-width: 436px;
+}
+
+.main2-title {
+    text-align: center;
+    padding: 120px 0 15px;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.section-second {
+    padding-bottom: 120px;
+}
+
+.section-second-text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section-second-title-and-description {
+    max-width: 513px;
+    margin: 0 auto 60px;
+}
+
+.card1 {
+    border: 2px solid #176bae;
+    border-radius: 16px;
+    padding: 28px;
+    width: 204px;
+    height: 141px;
+    box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+    background: #197cb8;
+    margin: 0 28px 0 0;
+}
+
+.card1:last-child {
+    margin: 0 0 0 0;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.cards-stolb-1 {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.cards-stolb-2 {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.cards-otstup1 {
+    margin-bottom: 28px;
+}
+
+.main-button-section-2-link {
+    border-radius: 100px;
+    padding: 18px 30px;
+    width: 436px;
+    height: 56px;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards-otstup2 {
+    margin-bottom: 30px;
+}
+
+.footer {
+    border-top: 1px solid #323952;
+    height: 361px;
+}
+
+.footer-div {
+    margin-top: 60px;
+    width: 811px;
+    height: 159px;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-style {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-logo-link {
+    width: 48px;
+    height: 48px;
+}
+
+.stolb2-ul,
+.stolb1-ul {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.stolb2-link,
+.stolb1-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.stolb2 {
+    width: 115px;
+    height: 173px;
+}
+
+.stolb1 {
+    width: 115px;
+    height: 241px;
+}
+
+.stolb-title {
+font-weight: 600;
+font-size: 22px;
+text-transform: uppercase;
+}
+
+.footer-logo-link img {
+    margin-bottom: 15px;
+}
+
+.stolb1 .stolb-title, .stolb2 .stolb-title {
+    margin-bottom: 20px;
+}
+
+.stolb1 .stolb1-ul .stolb1-li, .stolb2 .stolb2-ul .stolb2-li {
+    margin-bottom: 10px;
+}
+
+.stolbi {
+    min-width: 347px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-and-description {
+    width: 267px;
+}
