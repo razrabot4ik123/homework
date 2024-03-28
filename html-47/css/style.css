@@ -1,0 +1,50 @@
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+caption {
+    border: 1px solid #000;
+}
+
+.table-1 {
+    margin: 0 auto;
+}
+
+.table-2-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table-2 {
+    margin: 0 auto;
+}
+
+td {
+    text-transform: capitalize;
+}
+
+.table-2 tfoot tr td {
+    background: red;
+    text-align: center;
+    text-transform: capitalize;
+}
+.table-2 caption {
+    text-transform: capitalize;
+    background: green;
+}
+
+.table-2 {
+    background: yellow;
+}
+
+.table-2 tr {
+    background-color: orange;
+}
+
+.table-2-picture {
+    display: block;
+    margin: 0 auto;
+}
