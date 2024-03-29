@@ -1,0 +1,120 @@
+.first {
+    text-align: center;
+}
+
+.second {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.forma p {
+    font-style: italic;
+}
+
+span {
+    color: red;
+    font-style: italic;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    font-style: italic;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.contact div input {
+    max-width: 255px;
+    width: 100%;
+    min-height: 20px;
+}
+
+.contact {
+    line-height: 20px;
+    max-width: 595px;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin-bottom: 20px;
+}
+
+.forma {
+    max-width: 700px;
+    width: 100%;
+    min-height: 700px;
+    /* max-height: 700px; */
+    margin: 0 auto;
+    border: 5px solid black;
+}
+
+.forma fieldset {
+    margin-left: 40px;
+}
+
+select {
+    min-width: 263px;
+    min-height: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.cheking {
+    max-width: 595px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cheking .sas123123 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+.cheking .sas123123 {
+    margin-left: 15px;
+}
+
+.btn {
+    height: 40px;
+    width: 170px; 
+    margin-left: 40px;
+}
+
+.ierer {
+    width: 100px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 40px;
+}
+
+.label3 {
+    align-self: start;
+}
