@@ -1,0 +1,59 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 5vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/* ====================================================== */
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h2:hover {
+    color: red;
+}
+
+.title {
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    background: rgb(212, 95, 95);
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    left: -25%;
+    transform: translateX(-50%) translateY(-10%);
+
+}
+
+.title::after {
+    content: '';
+    background: rgb(95, 107, 212);
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    right: -25%;
+    transform: translateX(50%) translateY(-10%);
+}
