@@ -1,0 +1,75 @@
+body {
+    background-color: #1a1a1c;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background: #3b3a3d;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7de07d;
+    font-size: 30px;
+}
+
+.box span {
+    opacity: 0;
+}
+
+.box__scale {
+    position: absolute;
+    top: -100px;
+    left: -300px;
+    right: 600px;
+    height: 30px;
+    background: #fff;
+}
+
+.box:hover .box__scale {
+    right: -300px;
+}
+
+.box:hover span {
+    opacity: 1;
+}
+
+/* ================== Выполнение дз ниже =================== */
+
+.box__scale {
+    transition: .5s;
+}
+
+.box span {
+    transition: .5s .5s;
+}
+
+.home-work__title {
+    text-align: center;
+    height: 100%;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.home-work__link {
+    border: solid 3px rgb(70, 70, 70);
+    background-color: grey;
+    border-radius: 30px;
+    padding: 10px;
+    transition: background .3s, border .3s;
+}
+
+.home-work__link:hover {
+    background: rgb(255, 154, 154);
+    border: solid 3px rgb(255, 103, 103);
+}

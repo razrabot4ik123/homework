@@ -1,0 +1,61 @@
+body {
+    background-color: #1e1e20;
+}
+
+.wrapper {
+    padding: 50px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    background-color: #444;
+}
+
+.block {
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+/* ======================================== */
+
+.block {
+    animation: move-block 1s .3s infinite alternate linear,
+        color-block 1s .3s infinite alternate;
+    /* animation-name: move-block; */
+    /* animation-duration: 1s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-delay: 3s; */
+    /* animation-fill-mode: backwards, forwards; */
+    /* animation-timing-function: ease linear; */
+}
+
+@keyframes move-block {
+    0% {
+        left: 0px;
+        background-color: #fff;
+    }
+    50% {
+        border-radius: 100%;
+        background-color: red;
+    }
+    100% {
+        left: calc(100% - 200px);
+        background-color: rebeccapurple;
+    }
+
+}
+
+/* @keyframes color-block {
+    0% {
+        background-color: #fff;
+    }
+
+    100% {
+        background-color: rebeccapurple;
+    }
+} */
