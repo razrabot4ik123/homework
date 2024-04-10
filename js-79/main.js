@@ -34,6 +34,7 @@
 // }
 
 
+
 // оператор сравнения
 // const firstNumber = 10
 // const secondNumber = 10
@@ -71,15 +72,13 @@
 
 // let result = null
 
-// if (firstNumber === secondNumber) {
+// if (firstNumber == secondNumber) {
 //     result = firstNumber + secondNumber
 //     console.log(result)
 // } else {
 //     result = secondNumber - firstNumber
 //     console.log(result)
 // }
-
-
 
 
 
@@ -99,7 +98,7 @@
 
 
 
-// или
+// или ||
 // const firstNumber = 5
 // const secondNumber = 20
 
@@ -115,7 +114,7 @@
 
 
 
-// и 
+// и &&
 // const firstNumber = 5
 // const secondNumber = 20
 
@@ -133,6 +132,7 @@
 
 
 // const alex = 'admin'
+
 // if (alex === "user") {
 //     console.log('Alex is user')
 // } else if (alex === 'vip') {
@@ -164,7 +164,7 @@
 // }
 
 
-// myAge === 18 ? console.log('Вы совершеннолетний') : console.log('Вам еще нет 18')
+// myAge >= 18 ? console.log('Вы совершеннолетний') : console.log('Вам еще нет 18')
 
 
 
@@ -209,3 +209,9 @@
 //         alert('Вы ввели число 2, а может и 3');
 //         break;
 // }
+
+
+
+
+// const name = prompt('Введите ваше имя:');
+// alert(`Привет, ${name}!`);
