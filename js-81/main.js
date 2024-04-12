@@ -37,3 +37,21 @@
 // for (let i = allColorRainbow.length - 1; i >= 0; i--) {
 //     console.log(allColorRainbow[i])
 // }
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ повтор дз не глядя
+
+
+// const randomNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 123, 432, 654, 876, 5698, 345, 12, 543, 545, 76678, 9872, 81, 74, 76, 785, 4858, 94, 37, 36, 86, 98, 87, 313, 33, 22, 55, 44, 88, 91, 1]
+
+// for (let i = 0; i < randomNumbers.length; i++) {
+//     if (randomNumbers[i] % 2 === 0) {
+//         console.log(randomNumbers[i])
+//     }
+// }
+
+// const allColorRainbow = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'purple']
+
+// for (let i = allColorRainbow.length - 1; i >= 0 ; i--) {
+//     console.log(allColorRainbow[i])
+// }

@@ -66,7 +66,40 @@
 // console.log(helloYourName('Matvey'))
 
 
-
-
-// тяжело, завтра подумаю как
+// если можно сделать короче или проще, то мне интересно как, УРАААА Я СДЕЛАЛ ==================================================================================================================
 // const numbers = [1, 2, 3, 4, 22, 6, 7, 8, 9, 10, 123, 125, 654, 34, 87, 91, 53, 54, 68, 64]
+
+// function arrayNumbersMoreThanTen(arrayNumbers) {
+//     for (let i = 0; i < arrayNumbers.length; i++) {
+//         if (arrayNumbers[i] > 10) {
+//             console.log(`${arrayNumbers[i]} это число больше 10`)
+//         }
+//     }
+//     return
+// }
+
+// console.log(arrayNumbersMoreThanTen(numbers))
+
+
+//стоило подумать и получилось, я не уверен что правильно задал названия const, если можно сделать лучше или проще или удобнее, то мне интересно как ======================================================
+// const minus = 'minus'
+// const plus = 'plus'
+// const division = 'division'
+// const multiplication = 'multiplication'
+
+// function miniCalculator(firstNumber, secondNumber, sign) {
+//     if (sign === minus) {
+//         return firstNumber - secondNumber
+//     } else if (sign === plus) {
+//         return firstNumber + secondNumber
+//     } else if (sign === division) {
+//         return firstNumber / secondNumber
+//     } else if (sign === multiplication) {
+//         return firstNumber * secondNumber
+//     } else {
+//         return 'я такое не умею'
+//     }
+// }
+
+// const result = miniCalculator(5, 3, 'asdasd')
+// console.log(result)
