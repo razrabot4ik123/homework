@@ -41,5 +41,5 @@ console.log(num1 + num1 * num3)
 
 var z = 3
 var c = 4
-var b = z += c
+var b = z + c
 console.log(b)

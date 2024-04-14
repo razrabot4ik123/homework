@@ -75,17 +75,14 @@
 //             console.log(`${arrayNumbers[i]} это число больше 10`)
 //         }
 //     }
-//     return
 // }
-
+// консоль не надо
 // console.log(arrayNumbersMoreThanTen(numbers))
+// так надо
+// arrayNumbersMoreThanTen(numbers)
 
 
 //стоило подумать и получилось, я не уверен что правильно задал названия const, если можно сделать лучше или проще или удобнее, то мне интересно как ======================================================
-// const minus = 'minus'
-// const plus = 'plus'
-// const division = 'division'
-// const multiplication = 'multiplication'
 
 // function miniCalculator(firstNumber, secondNumber, sign) {
 //     if (sign === minus) {
@@ -102,4 +99,23 @@
 // }
 
 // const result = miniCalculator(5, 3, 'asdasd')
+// console.log(result)
+
+// через свитч кейс
+// function miniCalculator(firstNumber, secondNumber, sign) {
+//     switch (sign) {
+//         case 'minus':
+//             return firstNumber - secondNumber
+//         case 'plus':
+//             return firstNumber + secondNumber
+//         case 'division':
+//             return firstNumber / secondNumber
+//         case 'multiplication':
+//             return firstNumber * secondNumber
+//         default:
+//             return 'я такое не умею'
+//     }
+// }
+
+// const result = miniCalculator(5, 3, 'division')
 // console.log(result)
