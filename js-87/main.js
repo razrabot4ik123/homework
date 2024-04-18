@@ -25,11 +25,11 @@
 
 
 // все дивы
-// const elements = document.querySelectorAll('div')
+const elements = document.querySelectorAll('div')
 // console.log(elements)
 // console.log(elements[1])
 
-// elements.forEach((element) => {
-//     console.log(element)
-//     element.style.color = 'red'
-// })
+elements.forEach((element) => {
+    console.log(element)
+    element.style.color = 'red'
+})

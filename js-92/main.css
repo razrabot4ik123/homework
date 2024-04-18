@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.btn-open {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000c1;
+}
+
+.modal__window {
+    position: relative;
+    width: 50vw;
+    min-height: 40vw;
+    padding: 50px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* для второго моего способоа */
+
+/* .modal--open {
+    display: flex;
+} */
+
+
+/* для способа из видео */
+
+.modal {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.modal--open {
+    opacity: 1;
+    visibility: visible;
+}
+
+body {
+    min-height: 200vh;
+}
+
+.body--fixed {
+    overflow-y: hidden;
+}

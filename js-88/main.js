@@ -50,13 +50,10 @@
 
 
 
-
-
-
-// Событие submit происходит, когда пользователь отправляет форму, нажимая на кнопку отправки (обычно это кнопка с типом "submit") 
+// Событие submit происходит, когда пользователь отправляет форму, нажимая на кнопку отправки (обычно это кнопка с типом "submit")
 // или нажимая Enter на клавиатуре, находясь в текстовом поле формы.
 
-// Когда событие submit возникает, браузер собирает данные из всех элементов формы и отправляет их на сервер для обработки. После 
+// Когда событие submit возникает, браузер собирает данные из всех элементов формы и отправляет их на сервер для обработки. После
 // этого обычно происходит переход на другую страницу или показ сообщения об успешной отправке данных.
 
 
@@ -72,3 +69,39 @@
 // const form = document.getElementById("form");
 // const log = document.getElementById("log");
 // form.addEventListener("submit", logSubmit);
+
+
+
+
+
+
+
+// const form = document.getElementById('form')
+// const log = document.getElementById('log')
+// form.addEventListener('submit', (event) => {
+//     if (event.timeStamp) {
+//         log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`
+//         event.preventDefault();
+//     }
+// })
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// const button = document.querySelector('.btn')
+// let btnIsRed = false
+// button.addEventListener('click', () => {
+
+//     if (btnIsRed === true) {
+//         button.style.backgroundColor = 'blue'
+//         button.style.color = 'white'
+//         button.style.width = '500px'
+//         btnIsRed = false
+//     } else {
+//         button.style.backgroundColor = 'red'
+//         button.style.color = 'black'
+//         button.style.width = '100px'
+//         btnIsRed = true
+//     }
+// })

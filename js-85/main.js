@@ -19,33 +19,33 @@
 // console.log(array.length)
 
 
-// const users = [
-//     {
-//         name: 'max',
-//         age: 23
-//     },
-//     {
-//         name: 'ivan',
-//         age: 25
-//     },
-//     {
-//         name: 'robert',
-//         age: 12
-//     },
-// ]
+const users = [
+    {
+        name: 'max',
+        age: 23
+    },
+    {
+        name: 'ivan',
+        age: 25
+    },
+    {
+        name: 'robert',
+        age: 12
+    },
+]
 
-// users.forEach((user) => {
-// console.log(user)
-// })
+users.forEach((user) => {
+console.log(user)
+})
 
 
-// const userName =  []
+const userName =  []
 
-// users.forEach((user) => {
-// userName.push(user.name)
-// })
+users.forEach((user) => {
+userName.push(user.name)
+})
 
-// console.log(userName)
+console.log(userName)
 
 // users.pop()
 // console.log(users)

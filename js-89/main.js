@@ -10,11 +10,16 @@
 // посмотреть
 // console.log(text.classList)
 
+
+
 // btn.addEventListener('click', () => {
 //     text.classList.toggle('red')
 //     text.classList.toggle('move')
 //     text.classList.remove('abrakadabra')
 // })
+
+
+
 
 // btn.addEventListener('click', () => {
 //     text.classList.toggle('move')
@@ -23,4 +28,4 @@
 //     } else {
 //         text.innerText = 'text'
 //     }
-// })
+// })зз

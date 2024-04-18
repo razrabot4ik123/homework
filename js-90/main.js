@@ -1,3 +1,4 @@
+
 // const btns = document.querySelectorAll('.btn')
 
 // btns.forEach((btn, index) => {
@@ -19,6 +20,7 @@
 //     event.target.classList.toggle('red')
 // })
 
+// поменяет родителя элемента
 // btn.addEventListener('click', (event) => {
 //     event.currentTarget.classList.toggle('red')
 // })
@@ -30,6 +32,6 @@
 
 // Есть два способа отменить действие браузера:
 // В следующем примере при клике по ссылке переход не произойдёт:
-// <a href="/" onclick="return false">Нажми здесь</a>
+// <a href="#" onclick="return false">Нажми здесь</a>
 // или
-// <a href="/" onclick="event.preventDefault()">здесь</a>
+// <a href="#" onclick="event.preventDefault()">здесь</a>

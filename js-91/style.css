@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.btn {
+    margin-bottom: 5px;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
