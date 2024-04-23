@@ -6,11 +6,15 @@
     --accent-color: #ffa55c;
 }
 
-body {
+.body {
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: 1.5;
     color: var(--accent-text);
     background: var(--general-bg);
+}
+
+.body--opened-menu {
+    overflow: hidden;
 }
 
 .wrapper {
@@ -71,13 +75,14 @@ body {
 
 .hero__logo {
     max-width: 174px;
+    z-index: 11;
 }
 
 .nav {}
 
 .nav__list {
     display: flex;
-    gap: 40px;
+    gap: 4vh 40px;
 }
 
 .nav__item {}
@@ -90,8 +95,8 @@ body {
 }
 
 .nav__link::before {
-    position: absolute;
     content: '';
+    position: absolute;
     top: -8px;
     left: -13px;
     width: 34px;
@@ -106,6 +111,60 @@ body {
 .nav__link:hover::before {
     opacity: 1;
 }
+
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::after,
+.burger-icon span::before {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    transition: all .4s;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::after,
+.burger-icon span::before {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+/* бургер================================================ */
 
 .hero {
     padding: 50px 0 140px;
@@ -151,7 +210,7 @@ body {
 }
 
 .hero__title {
-    font-family: "Gabriola", sans-serif;
+    font-family: "Gabriola";
     font-size: 74px;
     line-height: 0.82;
     color: var(--accent-text);
@@ -206,10 +265,46 @@ body {
     transition: all .4s;
     opacity: 0;
 }
-.hero__img-button:hover::before {   
+
+.hero__img-button:hover::before {
     opacity: 1;
 }
 
 .hero__img-button img {
     padding-left: 8.8%;
 }
+
+/* хэдер========================================================================== */
+
+@media (max-width: 900px) {
+    .nav {
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        background: var(--general-bg);
+        padding: 26vh 15px 30px;
+        font-size: 24px;
+
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body--opened-menu .nav {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+}
+
+/* медиазапросы==================================================================== */
