@@ -89,6 +89,9 @@
 // ниже модалка мой способ=============================================================
 
 (function () {
+
+    //отсюда бургер гррра=================================================================== 
+
     const burgerWinodw = document.querySelector('.burger-icon')
     const openBurgerMenu = document.body
     const closeWitchLinksBurger = document.querySelector('.nav__list')
@@ -110,7 +113,6 @@
             burgerIsopen = false
         }
     })
-
 
     // отсюда модалка=================================================================
 
@@ -144,14 +146,115 @@
             body.classList.toggle('body--opened-modal')
         }
 
-        // ниже закрытие бургер меню через эскейп(от себя, ну и некоторое тоже от себя)=====================================
+        // ниже закрытие бургер меню через эскейп хоть и не надо, но я сделал чтобы было(вдруг кто-то к телефону клаву подключит)=====================================
 
         if (event.code === 'Escape' && openBurgerMenu.classList.contains('body--opened-menu')) {
             openBurgerMenu.classList.remove('body--opened-menu')
             burgerIsopen = false
         }
     })
+
+    // отсюда табы=====================================================================
+
+    const tabControls = document.querySelector('.tab-controls')
+
+    tabControls.addEventListener('click', toggleTab)
+
+    function toggleTab(event) {
+
+        const tabControl = event.target.closest('.tab-controls__link')
+
+        if (!tabControl) return
+        event.preventDefault()
+        if (tabControl.classList.contains('tab-controls__link--active') || tabControl.classList.contains('tab-content--show')) return
+
+
+        // посмотреть путь
+        // console.log(tabControl.href)
+        // посмотреть селектор атрибута хрефа
+        // console.log(tabControl.getAttribute('href'))
+
+
+        const tabContentID = tabControl.getAttribute('href')
+        const tabContent = document.querySelector(tabContentID)
+        const activeControl = document.querySelector('.tab-controls__link--active')
+        const activeContent = document.querySelector('.tab-content--show')
+
+        if (activeControl) {
+            activeControl.classList.remove('tab-controls__link--active')
+        }
+        if (activeContent) {
+            activeContent.classList.remove('tab-content--show')
+        }
+
+        tabControl.classList.add('tab-controls__link--active')
+
+        tabContent.classList.add('tab-content--show')
+
+    }
+
+    //остюда аккордеоны================================================================
+
+    const accordionLists = document.querySelectorAll('.accordion-list')
+
+    accordionLists.forEach(element => {
+
+        element.addEventListener('click', (event) => {
+            const accordionControl = event.target.closest('.accordion-list__control')
+            if (!accordionControl) return
+            const accordionItem = accordionControl.parentElement
+            const accordionContent = accordionControl.nextElementSibling
+
+            const accordionList = accordionItem.parentElement
+            const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+            const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
+            if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+                accordionOpenedItem.classList.remove('accordion-list__item--opened')
+                accordionOpenedContent.style.maxHeight = null
+            }
+
+            accordionItem.classList.toggle('accordion-list__item--opened')
+
+            if (accordionItem.classList.contains('accordion-list__item--opened')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+            } else {
+                accordionContent.style.maxHeight = null
+            }
+        })
+    })
+
 })()
+
+// ниже табы без новых переменных=============================================================================================
+
+// const tabControls = document.querySelector('.tab-controls')
+
+// tabControls.addEventListener('click', toggleTab)
+
+// function toggleTab(event) {
+//     const tabControl = event.target.closest('.tab-controls__link')
+
+//     if (!tabControl) return
+
+//     event.preventDefault()
+
+//     if (tabControl.classList.contains('tab-controls__link--active') || tabControl.classList.contains('tab-content--show')) return
+
+
+//     // посмотреть путь
+//     // console.log(tabControl.href)
+//     // посмотреть селектор атрибута хрефа
+//     // console.log(tabControl.getAttribute('href'))
+
+//     const tabContentID = tabControl.getAttribute('href')
+
+//     document.querySelector('.tab-content--show').classList.remove('tab-content--show')
+//     document.querySelector(tabContentID).classList.add('tab-content--show')
+
+//     document.querySelector('.tab-controls__link--active').classList.remove('tab-controls__link--active')
+//     tabControl.classList.add('tab-controls__link--active')
+// }
 
 // ниже писал вне функции ===================================================================================
 
@@ -231,4 +334,68 @@
 //         }
 //     }
 // })()
-// лучше использовать способ преподавателя? или и мой сойдет ========================================
+
+
+// ниже преподаватель писал закрытие аккордеона при открытии другого =========================================
+
+// const accordionLists = document.querySelectorAll('.accordion-list')
+
+// accordionLists.forEach(element => {
+
+//     element.addEventListener('click', (event) => {
+//         const accordionList = event.currentTarget
+//         const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+//         const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
+//         const accordionControl = event.target.closest('.accordion-list__control')
+//         if (!accordionControl) return
+//         const accordionItem = accordionControl.parentElement
+//         const accordionContent = accordionControl.nextElementSibling
+
+
+//         if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+//             accordionOpenedItem.classList.remove('accordion-list__item--opened')
+//             accordionOpenedContent.style.maxHeight = null
+//         }
+
+//         accordionItem.classList.toggle('accordion-list__item--opened')
+
+//         if (accordionItem.classList.contains('accordion-list__item--opened')) {
+//             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+//         } else {
+//             accordionContent.style.maxHeight = null
+//         }
+//     })
+// })
+
+
+// ниже делал аккордеон после просмтотра реализации преподавателя ==============================
+
+// const accordionLists = document.querySelectorAll('.accordion-list')
+
+// accordionLists.forEach(element => {
+
+//     element.addEventListener('click', (event) => {
+//         const accordionControl = event.target.closest('.accordion-list__control')
+//         if (!accordionControl) return
+//         const accordionItem = accordionControl.parentElement
+//         const accordionContent = accordionControl.nextElementSibling
+
+//         const accordionList = accordionItem.parentElement
+//         const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+//         const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
+//         if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+//             accordionOpenedItem.classList.remove('accordion-list__item--opened')
+//             accordionOpenedContent.style.maxHeight = null
+//         }
+
+//             accordionItem.classList.toggle('accordion-list__item--opened')
+
+//         if (accordionItem.classList.contains('accordion-list__item--opened')) {
+//             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+//         } else {
+//             accordionContent.style.maxHeight = null
+//         }
+//     })
+// })
