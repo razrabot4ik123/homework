@@ -264,6 +264,8 @@
         slidesPerView: 1,
         centeredSlides: true,
         initialSlide: 1,
+        noSwiping: true,
+        noSwipingClass: 'swiper-no-swiping',
 
         navigation: {
             nextEl: '.testimonials__next',

@@ -528,6 +528,7 @@
     transition: var(--transition);
     opacity: 0;
     height: auto;
+    cursor: pointer;
 }
 
 .testimonials__slide.swiper-slide-next,
@@ -574,6 +575,7 @@
     justify-content: center;
     gap: 5px;
     color: var(--accent-text-2);
+    cursor: auto;
 }
 
 .testimonials__quote span {
@@ -616,6 +618,7 @@
     top: -4%;
     left: 0;
 }
+
 .contact__inner::after {
     content: url("../img/decor/berries-2.png");
     position: absolute;
@@ -756,7 +759,8 @@
     /* ================== */
 
     .contact__inner::after {
-        top: -17%;;
+        top: -17%;
+        ;
     }
 
     /* ================== */
