@@ -86,7 +86,7 @@
 
 // способ преподавателя======================================================================
 
-// ниже модалка мой способ=============================================================
+// ниже мои способы=============================================================
 
 (function () {
 
@@ -202,6 +202,7 @@
         element.addEventListener('click', (event) => {
             const accordionControl = event.target.closest('.accordion-list__control')
             if (!accordionControl) return
+            event.preventDefault()
             const accordionItem = accordionControl.parentElement
             const accordionContent = accordionControl.nextElementSibling
 
@@ -223,6 +224,71 @@
             }
         })
     })
+
+    // слайдер-галерея==============================================================
+
+    const swiperGallery = new Swiper('.gallery__slider', {
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+
+        breakpoints: {
+            451: {
+                slidesPerView: 2,
+            },
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+                slidesPerView: 3,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
+    // слайдер-отзывы==============================================================
+
+    const swiperTestimonials = new Swiper('.testimonials__slider', {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+        initialSlide: 1,
+
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+        scrollbar: {
+            el: '.testimonials__scrollbar',
+            draggable: true,
+        },
+
+        breakpoints: {
+            1201: {
+                slidesPerView: 2.05,
+            },
+            901: {
+                slidesPerView: 1.7,
+            },
+        }
+    });
+
+    // маска для телефона=========================================================================
+
+    const telInputs = document.querySelectorAll('input[type="tel"]');
+    const im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(telInputs);
 
 })()
 
