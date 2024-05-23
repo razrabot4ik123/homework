@@ -57,7 +57,7 @@ html {
 }
 
 .button span {
-    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
     vertical-align: -moz-middle-with-baseline;
 }
 
@@ -434,8 +434,7 @@ html {
     transition: right 300ms;
 }
 
-.header__nav-link {
-}
+.header__nav-link {}
 
 .header__connect {
     display: flex;
