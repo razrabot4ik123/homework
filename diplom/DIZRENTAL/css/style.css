@@ -51,13 +51,14 @@ html {
     font-weight: 700;
     font-size: 13px;
     line-height: 1.54;
-    padding: 5px 19px 12px;
+    padding: 8px 19px 8px;
     transition: var(--transition);
     background: transparent;
 }
 
 .button span {
-    vertical-align: middle;
+    margin-bottom: 4px;
+    display: block;
 }
 
 /* ========================================== */
@@ -240,7 +241,7 @@ html {
 
 .modal__button {
     font-size: 18px;
-    padding: 10px 24px 18px;
+    padding: 14px 24px 14px;
 }
 
 .modal__button:hover {
