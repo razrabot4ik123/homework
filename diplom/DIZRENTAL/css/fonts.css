@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'PP Pangram Sans Narrow';
+    font-family: 'PP Pangram Sans';
     src: local('PP Pangram Sans Bold'), local('PPPangramSans-Bold'),
         url('../fonts/PPPangramSans-Bold.woff2') format('woff2'),
         url('../fonts/PPPangramSans-Bold.woff') format('woff');

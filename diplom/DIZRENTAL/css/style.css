@@ -51,9 +51,14 @@ html {
     font-weight: 700;
     font-size: 13px;
     line-height: 1.54;
-    padding: 8px 20px 13px;
+    padding: 1px 19px 13px;
     transition: var(--transition);
     background: transparent;
+}
+
+.button span {
+    vertical-align: baseline;
+    vertical-align: -moz-middle-with-baseline;
 }
 
 /* ========================================== */
@@ -430,7 +435,6 @@ html {
 }
 
 .header__nav-link {
-    display: block;
 }
 
 .header__connect {
@@ -656,8 +660,6 @@ html {
         position: relative;
         top: 28vh;
         right: 0;
-        opacity: 1;
-        visibility: visible;
         border: none;
         border-radius: 0;
         background: transparent;
@@ -665,6 +667,11 @@ html {
         align-items: center;
 
         transform: rotateY(0);
+    }
+
+    .body--opened-menu .header__nav-list {
+        opacity: 1;
+        visibility: visible;
     }
 
     .header__nav-item {
