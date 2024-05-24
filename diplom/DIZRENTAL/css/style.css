@@ -51,14 +51,8 @@ html {
     font-weight: 700;
     font-size: 13px;
     line-height: 1.54;
-    padding: 8px 19px 0px;
-    transition: var(--transition);
+    padding: 10px 19px 10px;
     background: transparent;
-}
-
-.button span {
-    margin-bottom: 12px;
-    display: block;
 }
 
 /* ========================================== */
