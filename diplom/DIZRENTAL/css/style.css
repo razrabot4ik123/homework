@@ -51,13 +51,13 @@ html {
     font-weight: 700;
     font-size: 13px;
     line-height: 1.54;
-    padding: 9px 19px 8px;
+    padding: 9px 19px 6px;
     transition: var(--transition);
     background: transparent;
 }
 
 .button span {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     display: block;
 }
 
