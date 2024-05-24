@@ -51,7 +51,7 @@ html {
     font-weight: 700;
     font-size: 13px;
     line-height: 1.54;
-    padding: 8px 19px 8px;
+    padding: 9px 19px 9px;
     transition: var(--transition);
     background: transparent;
 }
