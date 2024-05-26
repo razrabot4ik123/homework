@@ -28,6 +28,11 @@ html {
     flex-grow: 1;
 }
 
+.main__hero {
+    margin-bottom: 255px;
+}
+
+
 .container {
     max-width: 1350px;
     margin: 0 auto;
@@ -51,6 +56,51 @@ html {
     line-height: 1.54;
     padding: 10px 19px 10px;
     background: transparent;
+}
+
+.field {
+    display: block;
+}
+
+.field__input {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 28px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #1f1f1f;
+    background: #f5f5f5;
+}
+
+.field__label-checkbox {
+    display: flex;
+    gap: 14px;
+}
+
+.field__checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #eee;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.field__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icons/chek-chekbox.svg") 50% 50% no-repeat;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.field__checkbox:checked::before {
+    opacity: 1;
 }
 
 /* ========================================== */
@@ -93,7 +143,9 @@ html {
     justify-content: center;
     top: 5px;
     right: 5px;
+    transition: var(--transition);
 }
+
 
 .modal__cancel span {
     position: relative;
@@ -130,10 +182,14 @@ html {
     transform: rotate(-45deg);
 }
 
+.modal__cancel:hover span::after,
+.modal__cancel:hover span::before {
+    background: #7e7e7e;
+}
+
 .modal__title {
     text-align: center;
     font-family: "Unbounded", sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.29;
     margin-bottom: 20px;
@@ -142,7 +198,7 @@ html {
 .modal__text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 143%;
+    line-height: 1.43;
     color: #ffffff99;
     margin-bottom: 30px;
 }
@@ -156,21 +212,6 @@ html {
     margin-bottom: 14px;
 }
 
-.field {
-    display: block;
-}
-
-.field__input {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    padding: 28px 30px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #1f1f1f;
-}
-
 .tel__input {
     display: block;
     width: 100%;
@@ -180,60 +221,36 @@ html {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    color: #1f1f1f;
+    background: #f5f5f5;
 }
 
-.modal__check-label {
-    display: flex;
-    gap: 14px;
+.modal__label-checkbox {
     margin-bottom: 20px;
 }
 
-.modal__check-label span {
+.modal__label-checkbox span {
     font-weight: 500;
     font-size: 13px;
-    line-height: 138%;
+    line-height: 1.38;
     color: #ffffff99;
 }
 
-.modal__check-label span a {
+.modal__label-checkbox span a {
     text-decoration: underline;
     color: var(--accent-text);
-}
-
-.modal__check-label span a:hover {
-    color: #7e7e7e;
-    ;
-}
-
-.modal__checkbox {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    background: var(--accent-text);
-    flex-shrink: 0;
-    cursor: pointer;
-    position: relative;
-}
-
-.modal__checkbox::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url("../img/icons/chek-chekbox.svg") 50% 50% no-repeat;
     transition: var(--transition);
-    opacity: 0;
 }
 
-.modal__checkbox:checked::before {
-    opacity: 1;
+.modal__label-checkbox span a:hover {
+    color: #7e7e7e;
 }
 
+.modal__checkbox {}
 
 .modal__button {
     font-size: 18px;
     padding: 14px 24px 14px;
+    transition: var(--transition);
 }
 
 .modal__button:hover {
@@ -472,6 +489,7 @@ html {
     bottom: 0;
     height: 1px;
     background: #7e7e7e;
+    margin-bottom: -5px;
     transition: right 0s 0.3s, left 300ms;
 }
 
@@ -528,7 +546,6 @@ html {
     right: -9%;
     top: -1%;
     font-family: "Unbounded", sans-serif;
-    font-weight: 700;
     font-size: 9px;
     line-height: 1;
     transform: scale(1);
@@ -542,21 +559,161 @@ html {
 /* ==================================================== */
 
 .hero {
-    color: #fff;
+    position: relative;
+    overflow: visible;
 }
 
 .hero__bg {
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/decor/hero-bg.jpg) 50% 50% no-repeat;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/decor/hero-bg.jpg) 50% / cover no-repeat;
     border-radius: 0 0 36px 36px;
+    padding: 170px 0 292px;
 }
 
-.hero__title {}
+.hero__info {
+    color: var(--accent-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.hero__text {}
+.hero__title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 89px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+    max-width: 754px;
+    text-align: center;
+}
 
-.hero__list {}
+.hero__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-bottom: 120px;
+}
 
-.hero__item {}
+.hero__info hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.hero__list {
+    display: flex;
+    gap: 48px;
+
+}
+
+.hero__item {
+    display: flex;
+    gap: 17px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.53;
+    max-width: 243px;
+}
+
+.hero__item span {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent-text);
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1;
+    color: #1f1f1f;
+
+    margin-top: 5px;
+}
+
+.hero__nav {
+    border-radius: 20px;
+    background-color: var(--accent-text);
+    padding: 60px 70px 70px;
+    max-width: 1320px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -14%;
+}
+
+.hero__form-title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.32;
+    color: #1f1f1f;
+    margin-bottom: 36px;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 46px;
+}
+
+.hero__fieldset-date {
+    display: flex;
+    gap: 12px 20px;
+}
+
+.hero__label-date {}
+
+.hero__input-date {
+    width: 242px;
+}
+
+.hero__fieldset-checkbox {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 14px 26px;
+}
+
+.hero__label-checkbox {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #1f1f1f;
+}
+
+.hero__checkbox {
+    transition: var(--transition);
+}
+
+.hero__checkbox::before {
+    background: url(../img/icons/chek.svg) 50% 50% no-repeat;
+    transition: var(--transition);
+}
+
+.hero__checkbox:checked {
+    background: #1f1f1f;
+}
+
+.hero__button {
+    border-radius: 10px;
+    padding: 28px 34px;
+    background: linear-gradient(67deg, #9f7437 0%, #e3d293 100%);
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.hero__button:hover {
+    background: linear-gradient(250deg, #9f7437 0%, #e3d293 100%);
+}
+
 
 /* ==================================================== */
 

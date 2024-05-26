@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    font-family: 'Unbounded';
+    src: local('Unbounded Medium'), local('Unbounded-Medium'),
+        url('../fonts/Unbounded-Medium.woff2') format('woff2'),
+        url('../fonts/Unbounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'PP Pangram Sans';
     src: local('PP Pangram Sans Medium'), local('PPPangramSans-Medium'),
         url('../fonts/PPPangramSans-Medium.woff2') format('woff2'),

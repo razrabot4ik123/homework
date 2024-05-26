@@ -167,17 +167,15 @@
                                 <li class="hero__item">
                                     <span>2</span>
                                     Доставка авто
-                                    до вашей геолокации
+                                    до&nbsp;вашей геолокации
                                 </li>
                                 <li class="hero__item">
                                     <span>3</span>
-                                    Скидки постоянным
-                                    клиентам
+                                    Скидки постоянным клиентам
                                 </li>
                                 <li class="hero__item">
                                     <span>4</span>
-                                    Любая форма
-                                    оплаты
+                                    Любая форма оплаты
                                 </li>
                                 <li class="hero__item">
                                     <span>5</span>
@@ -186,10 +184,52 @@
                             </ul>
                         </div>
                         <div class="hero__nav">
-                            <form class="hero__form" action="">
-                                <h3 class="hero__form-title">
-                                    Заказать аренду online
-                                </h3>
+                            <h3 class="hero__form-title">
+                                Заказать аренду online
+                            </h3>
+                            <form class="hero__form">
+                                <fieldset class="hero__fieldset-date">
+                                    <label class="hero__label-date field">
+                                        <input class="hero__input-date field__input" type="text"
+                                            placeholder="Начало аренды" onfocus="this.type='date'"
+                                            onblur="this.type='text'" required="">
+                                            
+                                    </label>
+                                    <label class="hero__label-date field">
+                                        <input class="hero__input-date field__input" type="text"
+                                            placeholder="Завершение аренды" onfocus="this.type='date'"
+                                            onblur="this.type='text'" required="">
+                                    </label>
+                                </fieldset>
+                                <fieldset class="hero__fieldset-checkbox">
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Внедорожник
+                                    </label>
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Бизнес
+                                    </label>
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Премиум
+                                    </label>
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Спорт
+                                    </label>
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Спорткар
+                                    </label>
+                                    <label class="hero__label-checkbox field__label-checkbox">
+                                        <input class="hero__checkbox field__checkbox" type="checkbox">
+                                        Комфорт
+                                    </label>
+                                </fieldset>
+                                <button class="hero__button button" type="submit">
+                                    <span>Найти варианты</span>
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -214,8 +254,8 @@
                     <input class="field__input" type="text" placeholder="Имя" required="">
                 </label>
                 <input class="tel__input" type="tel" placeholder="Телефон" inputmode="text" required="">
-                <label class="modal__check-label">
-                    <input class="modal__checkbox" type="checkbox" required="">
+                <label class="modal__label-checkbox field__label-checkbox">
+                    <input class="modal__checkbox field__checkbox" type="checkbox" required="">
                     <span>
                         Отправляя форму, я соглашаюсь&nbsp;<a href="#">с&nbsp;политикой обработки персональных
                             данных</a>
