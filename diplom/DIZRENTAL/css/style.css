@@ -36,11 +36,9 @@ html {
 }
 
 .bg-container {
-    max-width: 1890px;
+    max-width: 1860px;
     margin: 0 auto;
-    padding: 0 15px;
     height: 100%;
-    position: relative;
 }
 
 /* ========================================== */
@@ -368,10 +366,6 @@ html {
     border-radius: 0 6px 6px 0;
 }
 
-.header__geolocation span {
-    margin-bottom: 1px;
-}
-
 .header__geolocation--active {
     color: var(--accent-text);
 }
@@ -440,6 +434,7 @@ html {
 .socials {
     display: flex;
     gap: 13px;
+    align-items: center;
 }
 
 .socials__item {}
@@ -543,6 +538,25 @@ html {
 .header__actions-item:hover .header__actions-badge {
     transform: scale(1.1);
 }
+
+/* ==================================================== */
+
+.hero {
+    color: #fff;
+}
+
+.hero__bg {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/decor/hero-bg.jpg) 50% 50% no-repeat;
+    border-radius: 0 0 36px 36px;
+}
+
+.hero__title {}
+
+.hero__text {}
+
+.hero__list {}
+
+.hero__item {}
 
 /* ==================================================== */
 
