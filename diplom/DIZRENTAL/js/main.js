@@ -141,6 +141,33 @@
     const im = new Inputmask('+7 (999) 999-99-99');
     im.mask(telInputs);
 
-    // отсюда =======================
+    // отсюда свайпер херо =======================
+
+    function initSwiper() {
+        const swiperHero = new Swiper('.hero__slider', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            initialSlide: 0,
+
+            breakpoints: {
+                701: {
+                    slidesPerView: 3,
+                    initialSlide: 1,
+                },
+                501: {
+                    slidesPerView: 3,
+                    initialSlide: 1.5,
+                },
+            }
+        });
+    }
+
+    function checkWidth() {
+        if (window.innerWidth <= 900) {
+            initSwiper()
+        }
+    }
+
+    checkWidth()
 
 })()

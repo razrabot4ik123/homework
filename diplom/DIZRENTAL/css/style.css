@@ -29,7 +29,7 @@ html {
 }
 
 .main__hero {
-    margin-bottom: 255px;
+    margin-bottom: 120px;
 }
 
 
@@ -560,11 +560,13 @@ html {
 
 .hero {
     position: relative;
-    overflow: visible;
 }
 
 .hero__bg {
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/decor/hero-bg.jpg) 50% / cover no-repeat;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/decor/hero-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0 0 36px 36px;
     padding: 170px 0 292px;
 }
@@ -599,10 +601,14 @@ html {
     width: 100%;
 }
 
-.hero__list {
-    display: flex;
-    gap: 48px;
+.hero__slider {
+    width: 100%;
+}
 
+.hero__list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 48px;
 }
 
 .hero__item {
@@ -611,7 +617,6 @@ html {
     font-weight: 500;
     font-size: 17px;
     line-height: 1.53;
-    max-width: 243px;
 }
 
 .hero__item span {
@@ -630,7 +635,7 @@ html {
     line-height: 1;
     color: #1f1f1f;
 
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .hero__nav {
@@ -639,9 +644,9 @@ html {
     padding: 60px 70px 70px;
     max-width: 1320px;
     width: 100%;
-
-    position: absolute;
-    bottom: -14%;
+    color: #1f1f1f;
+    margin: 0 auto;
+    transform: translateY(-50%);
 }
 
 .hero__form-title {
@@ -649,7 +654,6 @@ html {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.32;
-    color: #1f1f1f;
     margin-bottom: 36px;
 }
 
@@ -681,7 +685,6 @@ html {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
-    color: #1f1f1f;
 }
 
 .hero__checkbox {
@@ -747,6 +750,7 @@ html {
         opacity: 0;
         transition: var(--transition);
         transform-origin: top center;
+        z-index: 10;
 
         transform: rotateX(90deg);
     }
@@ -760,11 +764,56 @@ html {
         opacity: 1;
         transform: rotateX(0);
     }
+
+    /* ======================== */
+
+    .hero__nav {
+        max-width: 600px;
+    }
+
+    .hero__form-title {
+        text-align: center;
+    }
+
+    .hero__form {
+        flex-direction: column;
+    }
+
+    .hero__fieldset-date,
+    .hero__label-date,
+    .hero__input-date,
+    .hero__fieldset-checkbox,
+    .hero__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero__item {
+        max-width: 243px;
+    }
 }
 
 @media (max-width: 1000px) {
     .socials {
         display: none;
+    }
+
+    /* ================== */
+
+    .hero__title {
+        font-size: 10vw;
+        max-width: none;
+    }
+
+    .hero__text {
+        font-size: 20px;
     }
 }
 
@@ -882,12 +931,101 @@ html {
         display: flex;
     }
 
+    /* ===================== */
+
+    .hero__bg {
+        padding: 80px 0 140px;
+        border-radius: 0;
+    }
+
+    .hero__text {
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
+    .hero__info hr {
+        margin-bottom: 80px;
+    }
+
+    .hero__nav {
+        transform: translateY(0%);
+        max-width: none;
+        border-radius: 0;
+    }
+
+    .hero__list {
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    .hero__item {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 17px 0;
+    }
+
+    /* ============================== */
+    
+    .hero__item {
+        font-size: 15px;
+        line-height: 1.47;
+    }
+    
+    .hero__fieldset-date {
+        flex-direction: column;
+    }
+
+    .hero__fieldset-checkbox {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media (max-width: 500px) {
 
+    .hero__bg {
+        padding: 40px 0 40px;
+    }
+
+    .hero__info {
+        align-items: start;
+    }
+
+    .hero__title {
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    .hero__nav {
+        padding: 40px 20px;
+    }
+
+    .hero__form {
+        gap: 34px;
+    }
+
+    .hero__form-title {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    /* ======================== */
+
     .modal__window {
         padding: 40px 15px 30px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .hero__info hr {
+        margin-bottom: 40px;
     }
 
 }
