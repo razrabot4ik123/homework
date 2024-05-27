@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIZRENTAL</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/gray-car.svg">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -152,87 +153,86 @@
                     <div class="container">
                         <div class="hero__info">
                             <h1 class="hero__title">
-                                Аренда авто в Москве
+                                Аренда авто в&nbsp;Москве
                             </h1>
                             <p class="hero__text">
                                 Прокат или аренда автомобиля с водителем и без
                             </p>
                             <hr>
-                            <ul class="hero__list">
-                                <li class="hero__item">
-                                    <span>1</span>
-                                    Большой парк
-                                    автомобилей в наличии
-                                </li>
-                                <li class="hero__item">
-                                    <span>2</span>
-                                    Доставка авто
-                                    до&nbsp;вашей геолокации
-                                </li>
-                                <li class="hero__item">
-                                    <span>3</span>
-                                    Скидки постоянным клиентам
-                                </li>
-                                <li class="hero__item">
-                                    <span>4</span>
-                                    Любая форма оплаты
-                                </li>
-                                <li class="hero__item">
-                                    <span>5</span>
-                                    Выгодные цены
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hero__nav">
-                            <h3 class="hero__form-title">
-                                Заказать аренду online
-                            </h3>
-                            <form class="hero__form">
-                                <fieldset class="hero__fieldset-date">
-                                    <label class="hero__label-date field">
-                                        <input class="hero__input-date field__input" type="text"
-                                            placeholder="Начало аренды" onfocus="this.type='date'"
-                                            onblur="this.type='text'" required="">
-                                            
-                                    </label>
-                                    <label class="hero__label-date field">
-                                        <input class="hero__input-date field__input" type="text"
-                                            placeholder="Завершение аренды" onfocus="this.type='date'"
-                                            onblur="this.type='text'" required="">
-                                    </label>
-                                </fieldset>
-                                <fieldset class="hero__fieldset-checkbox">
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Внедорожник
-                                    </label>
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Бизнес
-                                    </label>
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Премиум
-                                    </label>
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Спорт
-                                    </label>
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Спорткар
-                                    </label>
-                                    <label class="hero__label-checkbox field__label-checkbox">
-                                        <input class="hero__checkbox field__checkbox" type="checkbox">
-                                        Комфорт
-                                    </label>
-                                </fieldset>
-                                <button class="hero__button button" type="submit">
-                                    <span>Найти варианты</span>
-                                </button>
-                            </form>
+                            <div class="hero__slider">
+                                <ul class="hero__list swiper-wrapper">
+                                    <li class="hero__item swiper-slide">
+                                        <span>1</span>
+                                        Большой парк
+                                        автомобилей в наличии
+                                    </li>
+                                    <li class="hero__item swiper-slide">
+                                        <span>2</span>
+                                        Доставка авто
+                                        до&nbsp;вашей геолокации
+                                    </li>
+                                    <li class="hero__item swiper-slide">
+                                        <span>3</span>
+                                        Скидки постоянным клиентам
+                                    </li>
+                                    <li class="hero__item swiper-slide">
+                                        <span>4</span>
+                                        Любая форма оплаты
+                                    </li>
+                                    <li class="hero__item swiper-slide">
+                                        <span>5</span>
+                                        Выгодные цены
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="hero__nav">
+                    <h3 class="hero__form-title">
+                        Заказать аренду online
+                    </h3>
+                    <form class="hero__form">
+                        <fieldset class="hero__fieldset-date">
+                            <label class="hero__label-date field">
+                                <input class="hero__input-date field__input" type="text" placeholder="Начало аренды"
+                                    onfocus="this.type='date'" onblur="this.type='text'" required="">
+                            </label>
+                            <label class="hero__label-date field">
+                                <input class="hero__input-date field__input" type="text" placeholder="Завершение аренды"
+                                    onfocus="this.type='date'" onblur="this.type='text'" required="">
+                            </label>
+                        </fieldset>
+                        <fieldset class="hero__fieldset-checkbox">
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Внедорожник
+                            </label>
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Бизнес
+                            </label>
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Премиум
+                            </label>
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Спорт
+                            </label>
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Спорткар
+                            </label>
+                            <label class="hero__label-checkbox field__label-checkbox">
+                                <input class="hero__checkbox field__checkbox" type="checkbox">
+                                Комфорт
+                            </label>
+                        </fieldset>
+                        <button class="hero__button button" type="submit">
+                            <span>Найти варианты</span>
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -267,6 +267,7 @@
             </form>
         </div>
     </div>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
