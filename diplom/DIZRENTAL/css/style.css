@@ -1,3 +1,8 @@
+@import "../css/fonts.css";
+@import "../css/reset.css";
+
+/* ============================== */
+
 :root {
     --border-radius: 20px;
     --general-text: #1f1f1f;
@@ -606,9 +611,10 @@ html {
 }
 
 .hero__list {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 48px;
+    display: flex;
+    gap: 28px 48px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero__item {
@@ -617,6 +623,7 @@ html {
     font-weight: 500;
     font-size: 17px;
     line-height: 1.53;
+    width: auto;
 }
 
 .hero__item span {
@@ -788,17 +795,7 @@ html {
     }
 }
 
-@media (max-width: 1300px) {
-    .hero__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero__item {
-        max-width: 243px;
-    }
-}
+@media (max-width: 1300px) {}
 
 @media (max-width: 1000px) {
     .socials {
@@ -947,19 +944,16 @@ html {
         margin-bottom: 80px;
     }
 
+    .hero__list {
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 0;
+    }
+
     .hero__nav {
         transform: translateY(0%);
         max-width: none;
         border-radius: 0;
-    }
-
-    .hero__list {
-        flex-wrap: nowrap;
-        justify-content: start;
-    }
-
-    .hero__item {
-        justify-content: center;
     }
 }
 
@@ -970,12 +964,7 @@ html {
     }
 
     /* ============================== */
-    
-    .hero__item {
-        font-size: 15px;
-        line-height: 1.47;
-    }
-    
+
     .hero__fieldset-date {
         flex-direction: column;
     }

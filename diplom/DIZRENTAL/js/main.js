@@ -143,31 +143,44 @@
 
     // отсюда свайпер херо =======================
 
-    function initSwiper() {
-        const swiperHero = new Swiper('.hero__slider', {
-            slidesPerView: 1,
-            centeredSlides: true,
-            initialSlide: 0,
+    document.addEventListener('DOMContentLoaded', function () {
+        function initSwiper() {
+            const swiperHero = new Swiper('.hero__slider', {
+                slidesPerView: 1,
+                centeredSlides: true,
+                spaceBetween: 18,
+                initialSlide: 0,
 
-            breakpoints: {
-                701: {
-                    slidesPerView: 3,
-                    initialSlide: 1,
-                },
-                501: {
-                    slidesPerView: 3,
-                    initialSlide: 1.5,
-                },
-            }
-        });
-    }
-
-    function checkWidth() {
-        if (window.innerWidth <= 900) {
-            initSwiper()
+                breakpoints: {
+                    801: {
+                        slidesPerView: 3,
+                        initialSlide: 1,
+                    },
+                    701: {
+                        slidesPerView: 2.3,
+                    },
+                    601: {
+                        slidesPerView: 2,
+                    },
+                    501: {
+                        slidesPerView: 1.6,
+                    },
+                    401: {
+                        slidesPerView: 1.3,
+                    },
+                }
+            })
         }
-    }
 
-    checkWidth()
+        function checkWidth() {
+            if (window.innerWidth <= 900) {
+                initSwiper()
+            }
+        }
+
+        checkWidth()
+    })
+
+    // =====================
 
 })()
