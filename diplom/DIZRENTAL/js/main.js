@@ -181,6 +181,44 @@
         checkWidth()
     })
 
-    // =====================
+    // отсюда табы =============================
+
+    const tabControls = document.querySelector('.product__tabs-list')
+
+    tabControls.addEventListener('click', toggleTab)
+
+    function toggleTab(event) {
+
+        const tabControl = event.target.closest('.product__tab-link')
+
+        if (!tabControl) return
+        event.preventDefault()
+
+        const activeControl = document.querySelector('.product__tab-link--active')
+
+        if (activeControl) {
+            activeControl.classList.remove('product__tab-link--active')
+        }
+
+        tabControl.classList.add('product__tab-link--active')
+    }
+
+    // отсюда сортировка товара =================
+
+
+
+    // отсюда прелоадер ===================== добавить кнопки для свайпера херо
+
+
+
+    // отсюда свайпеер херо бг =====================
+
+
+
+    // отсюда прилепающий хэдер =================
+
+
+
+    // отсюда свайпер табы продукт ===============
 
 })()
