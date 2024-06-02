@@ -35,8 +35,12 @@ html {
 
 .main__hero {}
 
-.main__product {}
+.main__product,
+.main__quote {
+    margin-bottom: 120px;
+}
 
+.main__contact {}
 
 .container {
     max-width: 1350px;
@@ -260,7 +264,6 @@ html {
 
 .modal__button:hover {
     background: #7e7e7e;
-    border: 2px solid #0a0a0a;
 }
 
 /* ========================================== */
@@ -514,7 +517,6 @@ html {
 
 .tel__button:hover {
     background: #7e7e7e;
-    border: 2px solid #0a0a0a;
 }
 
 .header__actions {
@@ -795,7 +797,10 @@ html {
 .product__tab-link--active {
     color: var(--accent-text);
     background: #1f1f1f;
-    pointer-events: none;
+}
+
+.product__tab-link--active:hover {
+    background: #1f1f1f;
 }
 
 .product__tab-link--active path {
@@ -831,10 +836,13 @@ html {
 }
 
 .product__grid-img {
-    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .product__grid-img img {
+    max-width: 500px;
     width: 100%;
 }
 
@@ -920,6 +928,85 @@ html {
 
 /* ==================================================== */
 
+.quote {}
+
+.quote__inner {
+    max-width: 1130px;
+}
+
+.quote__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.36;
+    margin-bottom: 36px;
+}
+
+.quote__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #9f9f9f;
+}
+
+/* ==================================================== */
+
+.contact {
+    color: #fff;
+}
+
+.contact__bg {
+    background: url(../img/decor/contact-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 36px;
+    padding: 122px 0 118px;
+}
+
+.contact__title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.29;
+    margin-bottom: 70px;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__col {
+    max-width: 760px;
+}
+
+.contact__col-text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.36;
+    margin-bottom: 36px;
+}
+
+.contact__col-quote {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    opacity: 0.8;
+}
+
+.contact__form {}
+
+.contact__label,
+.contact-tel {
+    margin-bottom: 14px;
+}
+
+.contact__button {
+    margin-bottom: 40px;
+}
+
+/* ==================================================== */
+
 @media (max-width: 1700px) {
     .tel__number {
         display: none;
@@ -989,9 +1076,18 @@ html {
 }
 
 @media (max-width: 1300px) {
+
+    .main__product,
+    .main__quote {
+        margin-bottom: 80px;
+    }
+
+    /* =================== */
+
     .product__grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 1000px) {
@@ -1160,11 +1256,18 @@ html {
     /* ============ */
 
     .product__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 }
 
 @media (max-width: 700px) {
+
+    .main__product,
+    .main__quote {
+        margin-bottom: 40px;
+    }
+
+    /* ===================== */
 
     .header {
         padding: 17px 0;
@@ -1214,7 +1317,20 @@ html {
     }
 
     .product__grid-img {
-        margin: 0 auto 32px;
+        margin-bottom: 32px;
+    }
+
+    /* ============== */
+
+    .quote__title {
+        font-size: 18px;
+        line-height: 1.22;
+        margin-bottom: 20px;
+    }
+
+    .quote__text {
+        font-size: 14px;
+        line-height: 1.43;
     }
 
 }
@@ -1231,7 +1347,13 @@ html {
 
     .hero__title {
         text-align: start;
+        line-height: 1.25;
         margin-bottom: 20px;
+    }
+
+    .hero__item {
+        font-size: 15px;
+        line-height: 1.47;
     }
 
     .hero__nav {
@@ -1256,6 +1378,7 @@ html {
     .hero__text {
         font-size: 16px;
         margin-bottom: 40px;
+        line-height: 1.5;
     }
 
     .hero__info hr {
@@ -1299,7 +1422,7 @@ html {
 
     .product__grid-action {
         flex-direction: column;
-        gap: 24px;
+        gap: 18px;
     }
 
     .product__grid-button {

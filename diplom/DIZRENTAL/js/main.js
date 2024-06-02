@@ -203,9 +203,90 @@
         tabControl.classList.add('product__tab-link--active')
     }
 
-    // отсюда сортировка товара =================
+    // отсюда сортировка товара по табам =================
 
+    const productTabs = document.querySelector('.product__tabs-list')
+    const items = document.querySelectorAll('.product__grid-card')
 
+    function filterTabs() {
+        productTabs.addEventListener('click', e => {
+
+            let target = e.target;
+
+            while (target && target !== productTabs && !target.dataset.id) {
+                target = target.parentElement;
+            }
+
+            if (target && target.dataset.id) {
+
+                const itemId = target.dataset.id
+
+                switch (itemId) {
+                    case 'SUVsСar':
+                        getItems(itemId)
+                        break
+                    case 'BusinessСar':
+                        getItems(itemId)
+                        break
+                    case 'SportsСar':
+                        getItems(itemId)
+                        break
+                    case 'PremiumCar':
+                        getItems(itemId)
+                        break
+                    case 'ComfortCar':
+                        getItems(itemId)
+                        break
+                }
+            }
+        })
+    }
+    filterTabs()
+
+    const seeAllCars = document.querySelector('.product__button')
+    seeAllCars.addEventListener('click', (e) => {
+        e.preventDefault()
+        items.forEach(item => {
+            item.style.display = 'block'
+        })
+    })
+
+    function getItems(tabName) {
+        items.forEach(item => {
+            if (item.classList.contains(tabName)) {
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    }
+
+    // отсюда сортировка товаров по чекбоксам
+
+    const productCheckboxes = document.querySelectorAll('.hero__fieldset-checkbox input[type="checkbox"]')
+
+    function filterItems() {
+        const activeFilters = Array.from(productCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.dataset.id)
+
+        items.forEach(item => {
+            const shouldShow = activeFilters.length === 0 || activeFilters.some(filter => item.classList.contains(filter))
+            item.style.display = shouldShow ? 'block' : 'none'
+        })
+    }
+
+    function applyFilters() {
+        filterItems()
+    }
+
+    const applyBtn = document.querySelector('.hero__button')
+    applyBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        applyFilters()
+    })
+
+    filterItems()
 
     // отсюда прелоадер ===================== добавить кнопки для свайпера херо
 
