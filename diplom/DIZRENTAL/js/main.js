@@ -266,13 +266,28 @@
     const productCheckboxes = document.querySelectorAll('.hero__fieldset-checkbox input[type="checkbox"]')
 
     function filterItems() {
-        const activeFilters = Array.from(productCheckboxes)
-            .filter(checkbox => checkbox.checked)
-            .map(checkbox => checkbox.dataset.id)
+        const activeFilters = []
+        productCheckboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+                activeFilters.push(checkbox.dataset.id)
+            }
+        })
 
-        items.forEach(item => {
-            const shouldShow = activeFilters.length === 0 || activeFilters.some(filter => item.classList.contains(filter))
-            item.style.display = shouldShow ? 'block' : 'none'
+        items.forEach(function (item) {
+            let shouldShow = activeFilters.length === 0;
+            if (!shouldShow) {
+                for (let i = 0; i < activeFilters.length; i++) {
+                    if (item.classList.contains(activeFilters[i])) {
+                        shouldShow = true
+                        break
+                    }
+                }
+            }
+            if (shouldShow) {
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
         })
     }
 
@@ -281,25 +296,24 @@
     }
 
     const applyBtn = document.querySelector('.hero__button')
-    applyBtn.addEventListener('click', (e) => {
-        e.preventDefault()
+    applyBtn.addEventListener('click', function () {
         applyFilters()
     })
 
-    filterItems()
-
     // отсюда прелоадер ===================== добавить кнопки для свайпера херо
 
+    
 
+    // отсюда свайпеер херо бг ===================== добавить фиксирование экрана на модалку и бургер
 
-    // отсюда свайпеер херо бг =====================
-
-
+    
 
     // отсюда прилепающий хэдер =================
 
+    
 
+    // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта
 
-    // отсюда свайпер табы продукт ===============
+    
 
 })()

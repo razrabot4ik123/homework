@@ -188,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__nav">
+                <div class="hero__filter">
                     <h3 class="hero__form-title">
                         Заказать аренду online
                     </h3>
@@ -229,13 +229,13 @@
                                 Комфорт
                             </label>
                         </fieldset>
-                        <button class="hero__button button" type="submit">
+                        <a class="hero__button button" href="#product" type="submit">
                             <span>Найти варианты</span>
-                        </button>
+                        </a>
                     </form>
                 </div>
             </section>
-            <section class="main__product product">
+            <section id="product" class="main__product product">
                 <div class="container">
                     <div class="product__top">
                         <h2 class="product__title">
@@ -673,28 +673,170 @@
                             <div class="contact__col">
                                 <p class="contact__col-text">
                                     Dizrental в Москве предлагает широкий выбор моделей от ведущих производителей, таких
-                                    как Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными автомобилями,
+                                    как Mercedes, BMW, Audi. Клиенты могут выбирать между спортивными автомобилями,
                                     роскошными седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом и
                                     эстетикой этих превосходных машин.
                                 </p>
-                                <p class="contact__col-quote">
+                                <q class="contact__col-quote">
                                     Благодаря услугам аренды, каждый желающий может ощутить себя владельцем такого
                                     автомобиля на несколько дней или даже на несколько часов, без необходимости покупки
                                     и обслуживания.
-                                </p>
+                                </q>
                             </div>
                             <form class="contact__form">
                                 <label class="contact__label field">
                                     <input class="field__input" type="text" placeholder="Имя" required="">
                                 </label>
-                                <input class="tel__input contact-tel" type="tel" placeholder="Телефон" inputmode="text" required="">
+                                <input class="tel__input contact-tel" type="tel" placeholder="Телефон" inputmode="text"
+                                    required="">
                                 <button class="contact__button button" type="submit">
                                     Забронировать
                                 </button>
-                                <div>
-                                    Отправляя форму, я соглашаюсь <a href="#">с&nbsp;политикой обработки персональных данных</a>
-                                </div>
+                                <label class="contact__label-checkbox field__label-checkbox">
+                                    <input class="contact__checkbox field__checkbox" type="checkbox" required="">
+                                    <span>
+                                        Отправляя форму, я соглашаюсь <a href="#">с политикой обработки
+                                            персональных
+                                            данных</a>
+                                    </span>
+                                </label>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__event event">
+                <div class="container">
+                    <h2 class="event__title">
+                        Аренда премиум автомобилей для мероприятий
+                    </h2>
+                    <div class="event__grid">
+                        <div class="event__grid-card">
+                            <div class="event__grid-img">
+                                <img src="img/content/wedding.jpg" alt="фотография свадьбы">
+                            </div>
+                            <div class="event__grid-content">
+                                <div class="event__grid-info">
+                                    <h3 class="event__grid-title">
+                                        Аренда авто на свадьбу
+                                    </h3>
+                                    <p class="event__grid-text">
+                                        Предоставляем аренду премиальных автомобилей для свадьбы с водителем
+                                    </p>
+                                </div>
+                                <a class="event__grid-button" href="#">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                            fill="#1F1F1F" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="event__grid-card">
+                            <div class="event__grid-img">
+                                <img src="img/content/photoshoot.jpg" alt="фотография свадьбы">
+                            </div>
+                            <div class="event__grid-content">
+                                <div class="event__grid-info">
+                                    <h3 class="event__grid-title">
+                                        Аренда авто для фотосессий
+                                    </h3>
+                                    <p class="event__grid-text">
+                                        Предоставляем аренду премиальных автомобилей для фотосессий или видеосъемки
+                                    </p>
+                                </div>
+                                <a class="event__grid-button" href="#">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                            fill="#1F1F1F" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__plan plan">
+                <div class="container">
+                    <h2 class="plan__title">
+                        3 шага, чтобы<br>
+                        арендовать авто
+                    </h2>
+                    <div class="plan__grid">
+                        <div class="plan__grid-card">
+                            <div class="plan__grid-icon">
+                                <img src="img/icons/operator.svg" alt="">
+                                <span>1</span>
+                            </div>
+                            <div class="plan__grid-info">
+                                <h3 class="plan__grid-title">
+                                    Подать заявку
+                                </h3>
+                                <p class="plan__grid-text">
+                                    Оформляете заявку на сайте, связываетесь по телефону или в мессенджерах и бронируете
+                                    автомобиль
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plan__grid-card">
+                            <div class="plan__grid-icon">
+                                <img src="img/icons/agreement.svg" alt="">
+                                <span>2</span>
+                            </div>
+                            <div class="plan__grid-info">
+                                <h3 class="plan__grid-title">
+                                    Договор
+                                </h3>
+                                <p class="plan__grid-text">
+                                    Подписываете договор на аренду автомобиля, вносите оплату и страховой депозит
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plan__grid-card">
+                            <div class="plan__grid-icon">
+                                <img src="img/icons/key.svg" alt="">
+                                <span>3</span>
+                            </div>
+                            <div class="plan__grid-info">
+                                <h3 class="plan__grid-title">
+                                    Получение
+                                </h3>
+                                <p class="plan__grid-text">
+                                    Забираете авто в <span>нашем салоне</span> или мы можем <span>доставить в любую
+                                        точку Москвы</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__discount discount">
+                <div class="bg-container">
+                    <div class="container">
+                        <div class="discount__inner">
+                            <div class="discount__info">
+                                <h2 class="discount__title">
+                                    Скидки и акции
+                                </h2>
+                                <p class="discount__text">
+                                    Аренда элитных автомобилей в Москве предоставляет возможность воплотить мечты в
+                                    реальность и создать незабываемые впечатления. Будь то эксклюзивная свадьба,
+                                    впечатляющий деловой приезд или просто желание испытать роскошь и элегантность
+                                    автомобиля премиум-класса, эта услуга открывает двери в мир высокого стиля и
+                                    комфорта.
+                                </p>
+                                <q class="discount__quote">
+                                    Аренда элитных автомобилей в Москве - это возможность позволить себе немного роскоши
+                                    и создать незабываемые моменты, которые останутся в памяти надолго.
+                                </q>
+                            </div>
+                            <div class="discount__gallery">
+
+                            </div>
                         </div>
                     </div>
                 </div>
