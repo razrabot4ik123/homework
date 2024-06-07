@@ -150,7 +150,7 @@
                 <div class="bg-container hero__bg">
                     <div class="container">
                         <div class="hero__info">
-                            <h1 class="hero__title">
+                            <h1 class="hero__title title">
                                 Аренда авто в&nbsp;Москве
                             </h1>
                             <p class="hero__text">
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="hero__filter">
-                    <h3 class="hero__form-title">
+                    <h3 class="hero__form-title title">
                         Заказать аренду online
                     </h3>
                     <form class="hero__form">
@@ -229,7 +229,7 @@
                                 Комфорт
                             </label>
                         </fieldset>
-                        <a class="hero__button button" href="#product" type="submit">
+                        <a class="hero__button button" href="#product">
                             <span>Найти варианты</span>
                         </a>
                     </form>
@@ -238,7 +238,7 @@
             <section id="product" class="main__product product">
                 <div class="container">
                     <div class="product__top">
-                        <h2 class="product__title">
+                        <h2 class="product__title title">
                             Наш автопарк
                         </h2>
                         <a class="product__button button" href="#">
@@ -666,7 +666,7 @@
             <section class="main__contact contact">
                 <div class="bg-container contact__bg">
                     <div class="container">
-                        <h2 class="contact__title">
+                        <h2 class="contact__title title">
                             Арендовать авто прямо сейчас!
                         </h2>
                         <div class="contact__content">
@@ -707,7 +707,7 @@
             </section>
             <section class="main__event event">
                 <div class="container">
-                    <h2 class="event__title">
+                    <h2 class="event__title title">
                         Аренда премиум автомобилей для мероприятий
                     </h2>
                     <div class="event__grid">
@@ -762,7 +762,7 @@
             </section>
             <section class="main__plan plan">
                 <div class="container">
-                    <h2 class="plan__title">
+                    <h2 class="plan__title title">
                         3 шага, чтобы<br>
                         арендовать авто
                     </h2>
@@ -815,11 +815,14 @@
                 </div>
             </section>
             <section class="main__discount discount">
-                <div class="bg-container">
+                <div class="bg-container discount__bg">
                     <div class="container">
                         <div class="discount__inner">
+                            <h2 class="discount__title--mobile title">
+                                Арендовать авто прямо сейчас!
+                            </h2>
                             <div class="discount__info">
-                                <h2 class="discount__title">
+                                <h2 class="discount__title title">
                                     Скидки и акции
                                 </h2>
                                 <p class="discount__text">
@@ -834,10 +837,406 @@
                                     и создать незабываемые моменты, которые останутся в памяти надолго.
                                 </q>
                             </div>
-                            <div class="discount__gallery">
-                                
+                            <div class="swiper discount__slider">
+                                <div class="swiper-wrapper discount__slider-wrapper">
+                                    <div class="swiper-slide discount__slider-slide">
+                                        <div class="discount__slider-img">
+                                            <img src="img/content/driving-car.jpg" alt="едущая машина">
+                                        </div>
+                                        <div class="discount__slider-info">
+                                            <h3 class="discount__slider-title">
+                                                Скидки постоянным клиентам
+                                            </h3>
+                                            <p class="discount__slider-text">
+                                                Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.
+                                            </p>
+                                            <span class="discount__slider-badge">
+                                                <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.96103 15.6503H7.22254L5.96347 22.8235C5.92493 23.0436 5.95874 23.2708 6.05948 23.4685C6.16022 23.6663 6.32204 23.8232 6.51897 23.914C6.7159 24.0048 6.93653 24.0244 7.14543 23.9695C7.35433 23.9145 7.53941 23.7883 7.67094 23.6111L17.8004 9.95649C17.9099 9.80881 17.9774 9.63225 17.9953 9.4468C18.0131 9.26135 17.9805 9.07442 17.9013 8.90719C17.822 8.73995 17.6992 8.5991 17.5468 8.50057C17.3944 8.40205 17.2185 8.34979 17.039 8.34971H10.7775L12.0365 1.17648C12.0751 0.956385 12.0413 0.729231 11.9405 0.531476C11.8398 0.333721 11.678 0.176832 11.481 0.0859914C11.2841 -0.00484958 11.0635 -0.0243752 10.8546 0.0305482C10.6457 0.0854717 10.4606 0.211659 10.3291 0.388858L0.199589 14.0435C0.0900702 14.1912 0.0225758 14.3678 0.00475061 14.5532C-0.0130746 14.7387 0.0194815 14.9256 0.0987316 15.0928C0.177982 15.26 0.300759 15.4009 0.453159 15.4994C0.605559 15.598 0.781491 15.6502 0.96103 15.6503ZM9.43456 4.86589L8.67889 9.16887C8.65365 9.31273 8.65916 9.46058 8.69505 9.60198C8.73094 9.74338 8.79632 9.87486 8.88657 9.98713C8.97682 10.0994 9.08973 10.1897 9.21732 10.2517C9.34491 10.3136 9.48406 10.3457 9.62492 10.3457H15.085L8.56544 19.1341L9.32111 14.8311C9.34636 14.6873 9.34084 14.5394 9.30495 14.398C9.26906 14.2566 9.20368 14.1251 9.11343 14.0129C9.02318 13.9006 8.91027 13.8103 8.78268 13.7483C8.65509 13.6864 8.51594 13.6543 8.37508 13.6543H2.91501L9.43456 4.86589Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discount__slider-slide">
+                                        <div class="discount__slider-img">
+                                            <img src="img/content/driving-car.jpg" alt="едущая машина">
+                                        </div>
+                                        <div class="discount__slider-info">
+                                            <h3 class="discount__slider-title">
+                                                Скидки постоянным клиентам
+                                            </h3>
+                                            <p class="discount__slider-text">
+                                                Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.
+                                            </p>
+                                            <span class="discount__slider-badge">
+                                                <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.96103 15.6503H7.22254L5.96347 22.8235C5.92493 23.0436 5.95874 23.2708 6.05948 23.4685C6.16022 23.6663 6.32204 23.8232 6.51897 23.914C6.7159 24.0048 6.93653 24.0244 7.14543 23.9695C7.35433 23.9145 7.53941 23.7883 7.67094 23.6111L17.8004 9.95649C17.9099 9.80881 17.9774 9.63225 17.9953 9.4468C18.0131 9.26135 17.9805 9.07442 17.9013 8.90719C17.822 8.73995 17.6992 8.5991 17.5468 8.50057C17.3944 8.40205 17.2185 8.34979 17.039 8.34971H10.7775L12.0365 1.17648C12.0751 0.956385 12.0413 0.729231 11.9405 0.531476C11.8398 0.333721 11.678 0.176832 11.481 0.0859914C11.2841 -0.00484958 11.0635 -0.0243752 10.8546 0.0305482C10.6457 0.0854717 10.4606 0.211659 10.3291 0.388858L0.199589 14.0435C0.0900702 14.1912 0.0225758 14.3678 0.00475061 14.5532C-0.0130746 14.7387 0.0194815 14.9256 0.0987316 15.0928C0.177982 15.26 0.300759 15.4009 0.453159 15.4994C0.605559 15.598 0.781491 15.6502 0.96103 15.6503ZM9.43456 4.86589L8.67889 9.16887C8.65365 9.31273 8.65916 9.46058 8.69505 9.60198C8.73094 9.74338 8.79632 9.87486 8.88657 9.98713C8.97682 10.0994 9.08973 10.1897 9.21732 10.2517C9.34491 10.3136 9.48406 10.3457 9.62492 10.3457H15.085L8.56544 19.1341L9.32111 14.8311C9.34636 14.6873 9.34084 14.5394 9.30495 14.398C9.26906 14.2566 9.20368 14.1251 9.11343 14.0129C9.02318 13.9006 8.91027 13.8103 8.78268 13.7483C8.65509 13.6864 8.51594 13.6543 8.37508 13.6543H2.91501L9.43456 4.86589Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discount__slider-slide">
+                                        <div class="discount__slider-img">
+                                            <img src="img/content/driving-car.jpg" alt="едущая машина">
+                                        </div>
+                                        <div class="discount__slider-info">
+                                            <h3 class="discount__slider-title">
+                                                Скидки постоянным клиентам
+                                            </h3>
+                                            <p class="discount__slider-text">
+                                                Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.
+                                            </p>
+                                            <span class="discount__slider-badge">
+                                                <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.96103 15.6503H7.22254L5.96347 22.8235C5.92493 23.0436 5.95874 23.2708 6.05948 23.4685C6.16022 23.6663 6.32204 23.8232 6.51897 23.914C6.7159 24.0048 6.93653 24.0244 7.14543 23.9695C7.35433 23.9145 7.53941 23.7883 7.67094 23.6111L17.8004 9.95649C17.9099 9.80881 17.9774 9.63225 17.9953 9.4468C18.0131 9.26135 17.9805 9.07442 17.9013 8.90719C17.822 8.73995 17.6992 8.5991 17.5468 8.50057C17.3944 8.40205 17.2185 8.34979 17.039 8.34971H10.7775L12.0365 1.17648C12.0751 0.956385 12.0413 0.729231 11.9405 0.531476C11.8398 0.333721 11.678 0.176832 11.481 0.0859914C11.2841 -0.00484958 11.0635 -0.0243752 10.8546 0.0305482C10.6457 0.0854717 10.4606 0.211659 10.3291 0.388858L0.199589 14.0435C0.0900702 14.1912 0.0225758 14.3678 0.00475061 14.5532C-0.0130746 14.7387 0.0194815 14.9256 0.0987316 15.0928C0.177982 15.26 0.300759 15.4009 0.453159 15.4994C0.605559 15.598 0.781491 15.6502 0.96103 15.6503ZM9.43456 4.86589L8.67889 9.16887C8.65365 9.31273 8.65916 9.46058 8.69505 9.60198C8.73094 9.74338 8.79632 9.87486 8.88657 9.98713C8.97682 10.0994 9.08973 10.1897 9.21732 10.2517C9.34491 10.3136 9.48406 10.3457 9.62492 10.3457H15.085L8.56544 19.1341L9.32111 14.8311C9.34636 14.6873 9.34084 14.5394 9.30495 14.398C9.26906 14.2566 9.20368 14.1251 9.11343 14.0129C9.02318 13.9006 8.91027 13.8103 8.78268 13.7483C8.65509 13.6864 8.51594 13.6543 8.37508 13.6543H2.91501L9.43456 4.86589Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discount__slider-slide">
+                                        <div class="discount__slider-img">
+                                            <img src="img/content/driving-car.jpg" alt="едущая машина">
+                                        </div>
+                                        <div class="discount__slider-info">
+                                            <h3 class="discount__slider-title">
+                                                Скидки постоянным клиентам
+                                            </h3>
+                                            <p class="discount__slider-text">
+                                                Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.
+                                            </p>
+                                            <span class="discount__slider-badge">
+                                                <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.96103 15.6503H7.22254L5.96347 22.8235C5.92493 23.0436 5.95874 23.2708 6.05948 23.4685C6.16022 23.6663 6.32204 23.8232 6.51897 23.914C6.7159 24.0048 6.93653 24.0244 7.14543 23.9695C7.35433 23.9145 7.53941 23.7883 7.67094 23.6111L17.8004 9.95649C17.9099 9.80881 17.9774 9.63225 17.9953 9.4468C18.0131 9.26135 17.9805 9.07442 17.9013 8.90719C17.822 8.73995 17.6992 8.5991 17.5468 8.50057C17.3944 8.40205 17.2185 8.34979 17.039 8.34971H10.7775L12.0365 1.17648C12.0751 0.956385 12.0413 0.729231 11.9405 0.531476C11.8398 0.333721 11.678 0.176832 11.481 0.0859914C11.2841 -0.00484958 11.0635 -0.0243752 10.8546 0.0305482C10.6457 0.0854717 10.4606 0.211659 10.3291 0.388858L0.199589 14.0435C0.0900702 14.1912 0.0225758 14.3678 0.00475061 14.5532C-0.0130746 14.7387 0.0194815 14.9256 0.0987316 15.0928C0.177982 15.26 0.300759 15.4009 0.453159 15.4994C0.605559 15.598 0.781491 15.6502 0.96103 15.6503ZM9.43456 4.86589L8.67889 9.16887C8.65365 9.31273 8.65916 9.46058 8.69505 9.60198C8.73094 9.74338 8.79632 9.87486 8.88657 9.98713C8.97682 10.0994 9.08973 10.1897 9.21732 10.2517C9.34491 10.3136 9.48406 10.3457 9.62492 10.3457H15.085L8.56544 19.1341L9.32111 14.8311C9.34636 14.6873 9.34084 14.5394 9.30495 14.398C9.26906 14.2566 9.20368 14.1251 9.11343 14.0129C9.02318 13.9006 8.91027 13.8103 8.78268 13.7483C8.65509 13.6864 8.51594 13.6543 8.37508 13.6543H2.91501L9.43456 4.86589Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discount__slider-slide">
+                                        <div class="discount__slider-img">
+                                            <img src="img/content/driving-car.jpg" alt="едущая машина">
+                                        </div>
+                                        <div class="discount__slider-info">
+                                            <h3 class="discount__slider-title">
+                                                Скидки постоянным клиентам
+                                            </h3>
+                                            <p class="discount__slider-text">
+                                                Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.
+                                            </p>
+                                            <span class="discount__slider-badge">
+                                                <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.96103 15.6503H7.22254L5.96347 22.8235C5.92493 23.0436 5.95874 23.2708 6.05948 23.4685C6.16022 23.6663 6.32204 23.8232 6.51897 23.914C6.7159 24.0048 6.93653 24.0244 7.14543 23.9695C7.35433 23.9145 7.53941 23.7883 7.67094 23.6111L17.8004 9.95649C17.9099 9.80881 17.9774 9.63225 17.9953 9.4468C18.0131 9.26135 17.9805 9.07442 17.9013 8.90719C17.822 8.73995 17.6992 8.5991 17.5468 8.50057C17.3944 8.40205 17.2185 8.34979 17.039 8.34971H10.7775L12.0365 1.17648C12.0751 0.956385 12.0413 0.729231 11.9405 0.531476C11.8398 0.333721 11.678 0.176832 11.481 0.0859914C11.2841 -0.00484958 11.0635 -0.0243752 10.8546 0.0305482C10.6457 0.0854717 10.4606 0.211659 10.3291 0.388858L0.199589 14.0435C0.0900702 14.1912 0.0225758 14.3678 0.00475061 14.5532C-0.0130746 14.7387 0.0194815 14.9256 0.0987316 15.0928C0.177982 15.26 0.300759 15.4009 0.453159 15.4994C0.605559 15.598 0.781491 15.6502 0.96103 15.6503ZM9.43456 4.86589L8.67889 9.16887C8.65365 9.31273 8.65916 9.46058 8.69505 9.60198C8.73094 9.74338 8.79632 9.87486 8.88657 9.98713C8.97682 10.0994 9.08973 10.1897 9.21732 10.2517C9.34491 10.3136 9.48406 10.3457 9.62492 10.3457H15.085L8.56544 19.1341L9.32111 14.8311C9.34636 14.6873 9.34084 14.5394 9.30495 14.398C9.26906 14.2566 9.20368 14.1251 9.11343 14.0129C9.02318 13.9006 8.91027 13.8103 8.78268 13.7483C8.65509 13.6864 8.51594 13.6543 8.37508 13.6543H2.91501L9.43456 4.86589Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__slider-nav">
+                                    <div class="discount__slider-buttons">
+                                        <div class="discount__slider-prev">
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.266172 6.37062L6.62987 0.245623C6.80133 0.0862349 7.03097 -0.00196054 7.26933 3.30771e-05C7.5077 0.00202669 7.73571 0.0940497 7.90426 0.256282C8.07282 0.418514 8.16843 0.637975 8.1705 0.867397C8.17257 1.09682 8.08094 1.31785 7.91534 1.48287L3.10347 6.11425H15.0909C15.332 6.11425 15.5632 6.20643 15.7337 6.37053C15.9042 6.53462 16 6.75718 16 6.98925C16 7.22131 15.9042 7.44387 15.7337 7.60797C15.5632 7.77206 15.332 7.86425 15.0909 7.86425H3.10347L7.91534 12.4956C8.00217 12.5763 8.07142 12.6729 8.11907 12.7796C8.16671 12.8864 8.19179 13.0012 8.19284 13.1174C8.19389 13.2336 8.17089 13.3488 8.12518 13.4563C8.07947 13.5639 8.01196 13.6616 7.92661 13.7437C7.84125 13.8259 7.73975 13.8908 7.62802 13.9348C7.5163 13.9788 7.39659 14.001 7.27588 14C7.15517 13.999 7.03587 13.9748 6.92496 13.929C6.81405 13.8831 6.71373 13.8164 6.62987 13.7329L0.266172 7.60787C0.0957422 7.44379 0 7.22127 0 6.98925C0 6.75723 0.0957422 6.53471 0.266172 6.37062Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="discount__slider-next">
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="discount__slider-pagination"></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__service service">
+                <div class="container">
+                    <h2 class="service__title title">
+                        Наши услуги
+                    </h2>
+                    <ul class="service__list">
+                        <li class="service__item">
+                            <a class="service__img" href="#">
+                                <picture>
+                                    <source media="(min-width: 901px)" srcset="img/content/key-and-car.jpg">
+                                    <img src="img/content/mobile/key-and-car-mobile.jpg" alt="Ключ на фоне фар">
+                                </picture>
+                            </a>
+                            <div class="service__info">
+                                <h3 class="service__info-title">
+                                    Доставляем авто в любую
+                                    точку&nbsp;Москвы
+                                </h3>
+                                <a class="service__info-link" href="#">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                            fill="#1F1F1F" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <a class="service__img" href="#">
+                                <picture>
+                                    <source media="(min-width: 901px)" srcset="img/content/man-in-car.jpg">
+                                    <img src="img/content/mobile/man-in-car-mobile.jpg" alt="Ключ на фоне фар">
+                                </picture>
+                            </a>
+                            <div class="service__info">
+                                <h3 class="service__info-title">
+                                    Аренда авто с личным<br>
+                                    водителем
+                                </h3>
+                                <a class="service__info-link" href="#">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                            fill="#1F1F1F" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <a class="service__img" href="#">
+                                <picture>
+                                    <source media="(min-width: 901px)" srcset="img/content/Wheel.jpg">
+                                    <img src="img/content/mobile/Wheel-mobile.jpg" alt="Ключ на фоне фар">
+                                </picture>
+                            </a>
+                            <div class="service__info">
+                                <h3 class="service__info-title">
+                                    Водитель на<br>
+                                    подмену
+                                </h3>
+                                <a class="service__info-link" href="#">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7338 6.37062L9.37013 0.245623C9.19867 0.0862349 8.96903 -0.00196054 8.73067 3.30771e-05C8.4923 0.00202669 8.26429 0.0940497 8.09574 0.256282C7.92718 0.418514 7.83157 0.637975 7.8295 0.867397C7.82743 1.09682 7.91906 1.31785 8.08466 1.48287L12.8965 6.11425H0.9091C0.667991 6.11425 0.436758 6.20643 0.266269 6.37053C0.0957795 6.53462 0 6.75718 0 6.98925C0 7.22131 0.0957795 7.44387 0.266269 7.60797C0.436758 7.77206 0.667991 7.86425 0.9091 7.86425H12.8965L8.08466 12.4956C7.99783 12.5763 7.92858 12.6729 7.88093 12.7796C7.83329 12.8864 7.80821 13.0012 7.80716 13.1174C7.80611 13.2336 7.82911 13.3488 7.87482 13.4563C7.92053 13.5639 7.98804 13.6616 8.07339 13.7437C8.15875 13.8259 8.26025 13.8908 8.37198 13.9348C8.4837 13.9788 8.60341 14.001 8.72412 14C8.84483 13.999 8.96413 13.9748 9.07504 13.929C9.18595 13.8831 9.28627 13.8164 9.37013 13.7329L15.7338 7.60787C15.9043 7.44379 16 7.22127 16 6.98925C16 6.75723 15.9043 6.53471 15.7338 6.37062Z"
+                                            fill="#1F1F1F" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main__motive motive">
+                <div class="container">
+                    <h2 class="motive__title title">
+                        6 причин заказат аренду авто в DizRental
+                    </h2>
+                    <ul class="motive__list">
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/insurance.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Страховка
+                                </h3>
+                                <p class="motive__info-text">
+                                    Все наши автомобили застрахованы по ОСАГО И КАСКО
+                                </p>
+                            </div>
+                        </li>
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/price-policy.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Ценовая политика
+                                </h3>
+                                <p class="motive__info-text">
+                                    Всегда доступные цены и приятные бонусы постоянным клиентам
+                                </p>
+                            </div>
+                        </li>
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/price-policy.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Ценовая политика
+                                </h3>
+                                <p class="motive__info-text">
+                                    Всегда доступные цены и приятные бонусы постоянным клиентам
+                                </p>
+                            </div>
+                        </li>
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/payment.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Оплата
+                                </h3>
+                                <p class="motive__info-text">
+                                    Любая удобная для вас форма оплаты (нал/безнал, банковский перевод)
+                                </p>
+                            </div>
+                        </li>
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/steering-wheel.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Автопарк
+                                </h3>
+                                <p class="motive__info-text">
+                                    Весь автопарк в отличном состоянии и всегда пополняется новыми моделями
+                                </p>
+                            </div>
+                        </li>
+                        <li class="motive__item">
+                            <div class="motive__icon">
+                                <img src="img/icons/clock.svg" alt="">
+                            </div>
+                            <div class="motive__info">
+                                <h3 class="motive__info-title">
+                                    Скорость
+                                </h3>
+                                <p class="motive__info-text">
+                                    Оформление аренды любого авто в течении не более 15 минут
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main__about about">
+                <div class="bg-container about__bg">
+                    <div class="container">
+                        <div class="about__english">
+                            <div class="about__english-inner">
+                                <h2 class="about__english-title title">
+                                    Car hire in Dubai for different budget
+                                </h2>
+                                <div class="about__english-img--mobile">
+                                    <img src="img/content/red-car.jpg" alt="Красаная машина">
+                                </div>
+                                <p class="about__english-text">
+                                    We guarantee that you get technically sound, clean car with a full tank, comfortable
+                                    interior. Our staff will independently pick up the car at the expiration of the
+                                    rental term at the specified location.
+                                </p>
+                                <q class="about__english-quote">
+                                    We strive to make car rental in Dubai affordable for everyone. That's why you can
+                                    rent cars in our office:<br>
+                                    Economy. Sedans and SUVs you can rent from 149 AED ($40) per day.Comfort. Sports
+                                    cars, vans, SUVs, sedans with comfortable saloon can be rented from 219 AED ($59)
+                                    per day.Premium. Premium SUVs and prestigious convertibles can be rent from AED 439
+                                    ($119) per day.
+                                </q>
+                            </div>
+                            <div class="about__english-img">
+                                <img src="img/content/red-car.jpg" alt="Красаная машина">
+                            </div>
+                        </div>
+                        <div class="about__russian">
+                            <h2 class="about__russian-title--mobile title">
+                                Аренда машин
+                                в Москве
+                            </h2>
+                            <div class="about__russian-img">
+                                <img src="img/content/vehicle-interior.jpg" alt="Интерьер машины">
+                            </div>
+                            <div class="about__russian-inner">
+                                <h2 class="about__russian-title title">
+                                    Аренда машин
+                                    в&nbsp;Москве
+                                </h2>
+                                <p class="about__russian-text">
+                                    Для получения более подробной информации о прокате авто можно посетить наш офис,
+                                    оставить заявку на сайте или позвонить
+                                    по&nbsp;телефону&nbsp;<a href="tel:+74991102047">7 (499) 110-20-47</a> <br><br>
+                                    Мы всегда рады помочь Вам по любым вопросам и обеспечить качественным авто.
+                                </p>
+                                <hr>
+                                <ul class="about__russian-list">
+                                    <li class="about__russian-item">
+                                        <div class="about__russian-icon">
+                                            <img src="img/icons/8.svg" alt="">
+                                        </div>
+                                        <p class="about__russian-info">
+                                            Более 8 лет на рынке проката авто
+                                        </p>
+                                    </li>
+                                    <li class="about__russian-item">
+                                        <div class="about__russian-icon">
+                                            <img src="img/icons/24.svg" alt="">
+                                        </div>
+                                        <p class="about__russian-info">
+                                            >24 премиальных и эксклюзивных моделей
+                                        </p>
+                                    </li>
+                                    <li class="about__russian-item">
+                                        <div class="about__russian-icon">
+                                            <img src="img/icons/gray-car.svg" alt="">
+                                        </div>
+                                        <p class="about__russian-info">
+                                            Автопарк стоимостью более 250 млн. рублей
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-container brands__bg">
+                    <div class="container">
+                        <ul class="brands__list">
+                            <li class="brands__item">
+                                <img src="img/content/brands/audi.png" alt="ауди">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/bmw.png" alt="бмв">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/mercedes.png" alt="мерседес">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/porsche.png" alt="порше">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/volkswagen.png" alt="фольксваген">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/kia.png" alt="киа">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/content/brands/ford.png" alt="форд">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -849,7 +1248,7 @@
             <a class="modal__cancel" href="#">
                 <span></span>
             </a>
-            <h3 class="modal__title">
+            <h3 class="modal__title title">
                 Заказать звонок
             </h3>
             <p class="modal__text">

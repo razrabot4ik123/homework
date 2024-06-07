@@ -146,27 +146,15 @@
     document.addEventListener('DOMContentLoaded', function () {
         function initSwiper() {
             const swiperHero = new Swiper('.hero__slider', {
-                slidesPerView: 1,
-                centeredSlides: true,
-                spaceBetween: 18,
-                initialSlide: 0,
+                slidesPerView: 'auto',
+                spaceBetween: 30,
 
                 breakpoints: {
-                    801: {
-                        slidesPerView: 3,
-                        initialSlide: 1,
-                    },
-                    701: {
-                        slidesPerView: 2.3,
-                    },
                     601: {
-                        slidesPerView: 2,
+                        spaceBetween: 48,
                     },
                     501: {
-                        slidesPerView: 1.6,
-                    },
-                    401: {
-                        slidesPerView: 1.3,
+                        spaceBetween: 30,
                     },
                 }
             })
@@ -304,16 +292,33 @@
 
     
 
-    // отсюда свайпеер херо бг ===================== добавить фиксирование экрана на модалку и бургер
+    // отсюда свайпеер херо бг =====================
 
     
 
-    // отсюда прилепающий хэдер =================
+    // отсюда прилепающий хэдер ================= сделать анимацию на бренды машин при адаптиве
 
     
 
-    // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта
+    // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта и приближение
 
     
+
+    // отсюда свайепер дискаунт =================== добавить ховер на сервис и подключить другое изображение к дискаунту машину
+
+    const swiper = new Swiper('.discount__slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        pagination: {
+            el: '.discount__slider-pagination',
+            type: 'fraction',
+        },
+
+        navigation: {
+            nextEl: '.discount__slider-next',
+            prevEl: '.discount__slider-prev',
+        },
+    })
 
 })()
