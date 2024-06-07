@@ -288,7 +288,7 @@
         applyFilters()
     })
 
-    // отсюда прелоадер ===================== добавить кнопки для свайпера херо
+    // отсюда прелоадер =====================
 
     
 
@@ -296,17 +296,52 @@
 
     
 
-    // отсюда прилепающий хэдер ================= сделать анимацию на бренды машин при адаптиве
+    // отсюда прилепающий хэдер =================
 
     
 
     // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта и приближение
 
-    
+    document.addEventListener('DOMContentLoaded', function () {
 
-    // отсюда свайепер дискаунт =================== добавить ховер на сервис и подключить другое изображение к дискаунту машину
+        function initSwiper() {
+            const swiperTabs = new Swiper('.product__tabs-swiper', {
+                slidesPerView: 1.4,
+                freeMode: true,
+                spaceBetween: 14,
 
-    const swiper = new Swiper('.discount__slider', {
+                breakpoints: {
+                    501: {
+                        slidesPerView: 2.2,
+                    },
+                    701: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 20,
+                    },
+                    901: {
+                        slidesPerView: 3.3,
+                        spaceBetween: 20,
+                    },
+                    1201: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                }
+            })
+        }
+
+        function checkWidthTab() {
+            if (window.innerWidth <= 1300) {
+                initSwiper()
+            }
+        }
+
+        checkWidthTab()
+    })
+
+    // отсюда свайепер дискаунт ===================
+
+    const swiperDiscount = new Swiper('.discount__slider', {
         slidesPerView: 1,
         spaceBetween: 30,
 
@@ -319,6 +354,29 @@
             nextEl: '.discount__slider-next',
             prevEl: '.discount__slider-prev',
         },
+    })
+
+    // отсюда вызов анимации на ширине 1400
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const animationWrapper = document.querySelector('.brands__wrapper')
+        const animationList = document.querySelectorAll('.brands__list')
+
+        function initAnimation() {
+            animationWrapper.classList.add('brands__wrapper-animation')
+            animationList.forEach(list => {
+                list.classList.add('brands__list-animation')
+            })
+        }
+
+        function checkWidthBrands() {
+            if (window.innerWidth <= 1400) {
+                initAnimation()
+            }
+        }
+
+        checkWidthBrands()
     })
 
 })()
