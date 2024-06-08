@@ -169,11 +169,12 @@
         checkWidth()
     })
 
-    // отсюда табы =============================
+    // отсюда табы актив=============================
 
     const tabControls = document.querySelector('.product__tabs-list')
 
     tabControls.addEventListener('click', toggleTab)
+
 
     function toggleTab(event) {
 
@@ -249,7 +250,7 @@
         })
     }
 
-    // отсюда сортировка товаров по чекбоксам
+    // отсюда сортировка товаров по чекбоксам ==========================
 
     const productCheckboxes = document.querySelectorAll('.hero__fieldset-checkbox input[type="checkbox"]')
 
@@ -288,17 +289,17 @@
         applyFilters()
     })
 
-    // отсюда прелоадер =====================
+    // отсюда прелоадер ===================== сделать прелоадер с крутящимеся колесами и машина пока едет заполняет шкалу загрузки
 
-    
 
-    // отсюда свайпеер херо бг =====================
 
-    
+    // отсюда свайпеер херо бг ===================== сортировка по якорной ссылке 
 
-    // отсюда прилепающий хэдер =================
 
-    
+
+    // отсюда прилепающий хэдер ================= 
+
+
 
     // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта и приближение
 
@@ -356,7 +357,7 @@
         },
     })
 
-    // отсюда вызов анимации на ширине 1400
+    // отсюда вызов анимации на ширине 1400 ==================
 
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -377,6 +378,58 @@
         }
 
         checkWidthBrands()
+    })
+
+    // отсюда аккордеоны футер ==================================
+
+    function initAccordion() {
+
+        const accordionLists = document.querySelectorAll('.accordion-list')
+
+        accordionLists.forEach(element => {
+
+            element.addEventListener('click', (event) => {
+                const accordionControl = event.target.closest('.accordion-list__control')
+                if (!accordionControl) return
+                event.preventDefault()
+                const accordionItem = accordionControl.parentElement
+                const accordionContent = accordionControl.nextElementSibling
+
+                const accordionList = accordionItem.parentElement
+                const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+                const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
+                if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+                    accordionOpenedItem.classList.remove('accordion-list__item--opened')
+                    accordionOpenedContent.style.maxHeight = null
+                }
+
+                accordionItem.classList.toggle('accordion-list__item--opened')
+
+                if (accordionItem.classList.contains('accordion-list__item--opened')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+                } else {
+                    accordionContent.style.maxHeight = null
+                }
+            })
+        })
+
+    }
+
+    // отсюда вызов аккордеонов при ширине 700 ==============
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const accordionList = document.querySelector('.footer__nav-top')
+
+        function checkWidthAccordion() {
+            if (window.innerWidth <= 700) {
+                accordionList.classList.add('accordion-list')
+                initAccordion()
+            }
+        }
+
+        checkWidthAccordion()
     })
 
 })()
