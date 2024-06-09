@@ -69,6 +69,10 @@ html {
 
 /* ========================================== */
 
+.preloader--opened {
+    overflow: hidden;
+}
+
 .preloader {
     position: fixed;
     inset: 0;
