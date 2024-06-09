@@ -1,5 +1,20 @@
 (function () {
 
+    // отсюда прелоадер =====================
+
+    if (window.innerWidth >= 1000) {
+
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding')
+            window.setTimeout(function () {
+                document.body.classList.add('loaded')
+                document.body.classList.remove('loaded_hiding')
+            }, 500)
+        }
+    } else {
+        document.body.classList.add('loaded')
+    }
+
     // отсюда переключатель локации===============================
 
     const changeGeolocation = document.querySelector('.haeder__change-geolocation');
@@ -311,21 +326,6 @@
     applyBtn.addEventListener('click', function () {
         applyFilters()
     })
-
-    // отсюда прелоадер =====================
-
-    if (window.innerWidth >= 1000) {
-
-        window.onload = function () {
-            document.body.classList.add('loaded_hiding')
-            window.setTimeout(function () {
-                document.body.classList.add('loaded')
-                document.body.classList.remove('loaded_hiding')
-            }, 500)
-        }
-    } else {
-        document.body.classList.add('loaded')
-    }
 
     // отсюда свайпер табы продукт ===============
 
