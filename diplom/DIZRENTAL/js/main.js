@@ -175,21 +175,44 @@
 
     tabControls.addEventListener('click', toggleTab)
 
-
     function toggleTab(event) {
-
         const tabControl = event.target.closest('.product__tab-link')
-
         if (!tabControl) return
         event.preventDefault()
 
         const activeControl = document.querySelector('.product__tab-link--active')
-
         if (activeControl) {
             activeControl.classList.remove('product__tab-link--active')
         }
-
         tabControl.classList.add('product__tab-link--active')
+    }
+
+    // отсюда сортировка товара по якорным ссылкам =================
+
+    const footerLinks = document.querySelectorAll('.footer__nav-link')
+
+    footerLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            const tabId = event.target.dataset.id
+
+            if (tabId) {
+                const necessaryTab = document.querySelector(`.product__tab-link[data-id="${tabId}"]`)
+                if (necessaryTab) {
+                    const activeControl = document.querySelector('.product__tab-link--active')
+                    if (activeControl) {
+                        activeControl.classList.remove('product__tab-link--active')
+                    }
+                    necessaryTab.classList.add('product__tab-link--active')
+                }
+                filterTabsLink(tabId)
+            }
+        })
+    })
+
+    function filterTabsLink(tabId) {
+        items.forEach(item => {
+            item.style.display = item.classList.contains(tabId) ? 'block' : 'none'
+        })
     }
 
     // отсюда сортировка товара по табам =================
@@ -289,19 +312,22 @@
         applyFilters()
     })
 
-    // отсюда прелоадер ===================== сделать прелоадер с крутящимеся колесами и машина пока едет заполняет шкалу загрузки
+    // отсюда прелоадер =====================
 
+    if (window.innerWidth >= 1000) {
 
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding')
+            window.setTimeout(function () {
+                document.body.classList.add('loaded')
+                document.body.classList.remove('loaded_hiding')
+            }, 500)
+        }
+    } else {
+        document.body.classList.add('loaded')
+    }
 
-    // отсюда свайпеер херо бг ===================== сортировка по якорной ссылке 
-
-
-
-    // отсюда прилепающий хэдер ================= 
-
-
-
-    // отсюда свайпер табы продукт =============== сделать свайпер при наведении на картинку продукта и приближение
+    // отсюда свайпер табы продукт ===============
 
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -413,7 +439,6 @@
                 }
             })
         })
-
     }
 
     // отсюда вызов аккордеонов при ширине 700 ==============
@@ -432,4 +457,25 @@
         checkWidthAccordion()
     })
 
+    // отсюда кнопка вверх появление ====================
+
+    const btnUp = document.querySelector('.btn-up')
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btnUp.classList.add('btn-up--show')
+        } else {
+            btnUp.classList.remove('btn-up--show')
+        }
+    })
+
+    // отсюда кнопка вверх прокрутка ======================
+
+    btnUp.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+        })
+    })
+
 })()
+
+// в будущем сделать свайпер при наведении на картинку продукта или приближение

@@ -11,6 +11,20 @@
 </head>
 
 <body class="body">
+    <div class="preloader">
+        <div class="preloader__row">
+            <h1 class="preloader__title title">Загрузка</h1>
+            <div class="preloader__road"></div>
+            <div class="preloader__city"></div>
+            <div class="preloader__car">
+                <img src="img/preloader/car.png" alt="машина прелоадер">
+                <div class="preloader__wheels">
+                    <img class="preloader__wheel" src="img/preloader/wheel.png" alt="колесо">
+                    <img class="preloader__wheel" src="img/preloader/wheel.png" alt="колесо">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="header__inner">
@@ -1472,27 +1486,27 @@
                                     <div class="accordion-list__content">
                                         <ul class="footer__nav-list accordion-content">
                                             <li class="footer__nav-item">
-                                                <a class="footer__nav-link" href="#SUVsСar">
+                                                <a class="footer__nav-link" href="#SUVsСar" data-id="SUVsСar">
                                                     Внедорожники
                                                 </a>
                                             </li>
                                             <li class="footer__nav-item">
-                                                <a class="footer__nav-link" href="#SportsСar">
-                                                    СпортКар
+                                                <a class="footer__nav-link" href="#SportsСar" data-id="SportsСar">
+                                                    Спорткар
                                                 </a>
                                             </li>
                                             <li class="footer__nav-item">
-                                                <a class="footer__nav-link" href="#BusinessСar">
+                                                <a class="footer__nav-link" href="#BusinessСar" data-id="BusinessСar">
                                                     Бизнес
                                                 </a>
                                             </li>
                                             <li class="footer__nav-item">
-                                                <a class="footer__nav-link" href="#PremiumCar">
+                                                <a class="footer__nav-link" href="#PremiumCar" data-id="PremiumCar">
                                                     Премиум
                                                 </a>
                                             </li>
                                             <li class="footer__nav-item">
-                                                <a class="footer__nav-link" href="#ComfortCar">
+                                                <a class="footer__nav-link" href="#ComfortCar" data-id="ComfortCar">
                                                     Комфорт
                                                 </a>
                                             </li>
@@ -1553,6 +1567,12 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="btn-up">
+        <div class="btn-up__img">
+            <img src="img/icons/arrow-bottom.svg" alt="">
+        </div>
+        <span class="btn-up__text">Вверх!</span>
     </div>
     <div class="modal">
         <div class="modal__window">
