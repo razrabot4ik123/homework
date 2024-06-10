@@ -15,6 +15,7 @@
             }, 2000)
         }
     } else {
+        document.body.classList.remove('preloader--opened')
         document.body.classList.add('loaded')
     }
 
